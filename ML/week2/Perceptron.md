@@ -37,5 +37,4 @@
   
  ### *geometrical view of perceptrons*
  
-  - 왜 input vector 를 더하거나 빼서 update를 해야할까? geometrical하게 해석하면 알 수 있다.
-  - syntax: [링크](http://sanghyukchun.github.io/40/)
+  - 왜 input vector 를 더하거나 빼서 update를 해야할까? geometrical하게 해석하면 알 수 있다. [링크](http://sanghyukchun.github.io/40/)
