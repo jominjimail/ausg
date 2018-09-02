@@ -9,4 +9,4 @@
 아무튼, perceptron은 매우 간단한 Feed forward 네트워크의 일종이다. (선형 분류기)
 
 
-![Alt text](./images/p0.png)
+![Alt text](./image/p0.png)
