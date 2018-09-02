@@ -1,6 +1,6 @@
 
-## *Artificial Neural Networks*
-## *The Perceptron: The first generation of neural networks*
+### *Artificial Neural Networks*
+### *The Perceptron: The first generation of neural networks*
 
 가장 오래된 neural network중 하나이며, 특정 상황에서는 정말 outperform한 결과를 보여주지만 한계가 분명한 알고리즘이다.
 이 한계에 부딪혀 한 동안 dark age of connectionism 이라고 불리는 기간이 있었다.
@@ -10,3 +10,9 @@
 
 
 ![Alt text](./image/p0.png)
+
+  -perceptron은 weights, summation prodessor, activation function으로 구성되어있다.
+  -perceptron은 inputs와 outputs의 sum을 가중치로 가지고 있다.
+  -sum이 threshold value(theta) 보다 크면 -> 1 , otherwise는 0(or -1)이다.
+  
+  
