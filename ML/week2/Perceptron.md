@@ -31,7 +31,8 @@
 ### *how to learn the weight value*
 
   - input vector 가 들어왔을때 , 현재 weight로 맞는 값이 나온다면 weight는 update되지 않는다. (W t+1 = W t) 만약 1이 나와야하는데 0이 나온다면 weight vector 에 input vector를 더해준다. (W t+1 = Wt + V) 만약 0 이나와야하는데 1이 나온다면 weight vector 에서 input vector 를 빼준다. (W t+1 = Wt - V)
-  - misclassified point가 발견될 때 마다 이 알고리즘을 반복한다. 에러를 줄이기 위해 그럼 언제까지 weight와 bias를 업데이트 해야할까 learning rate를 정해줘야 한다. > optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.01)
+  - misclassified point가 발견될 때 마다 이 알고리즘을 반복한다. 에러를 줄이기 위해 그럼 언제까지 weight와 bias를 업데이트 해야할까 learning rate를 정해줘야 한다. 
+  > optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.01)
   
   
  ### *geometrical view of perceptrons*
