@@ -35,6 +35,19 @@
 ``` optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.01) ```
   
   
- ### *geometrical view of perceptrons*
+### *geometrical view of perceptrons*
  
   - 왜 input vector 를 더하거나 빼서 update를 해야할까? geometrical하게 해석하면 알 수 있다. [링크](http://sanghyukchun.github.io/40/)
+
+### *perceptrons의 procedure*
+
+  - weights값을 초기화한다. (0 이나 작은 랜덤 수)
+  - learning rate를 선택한다. (0~1사이의 수)
+  - update rule을 반복한다. fin 조건에 만족할때 까지
+  - training 예시 (x, 정답 값) 
+    1. 해당 activation function을 이용해 값을 구한다. f(w x)
+    2. 만약 계산값이 정답과 다르다면, Find error  = output - actual , 같으면 no change
+    3. b = b + m *error
+    4. W(input) = W(input) + error * m* x(i)
+      - W 는 weight의 vector값이고, x는 현재 input vector값, ouput은 계산값, actual은 원래 값 즉, 맞춰야하는 정답이다.
+    
