@@ -11,8 +11,8 @@
 
 ![Alt text](./image/p0.png)
 
-  -perceptron은 weights, summation prodessor, activation function으로 구성되어있다.
-  -perceptron은 inputs와 outputs의 sum을 가중치로 가지고 있다.
-  -sum이 threshold value(theta) 보다 크면 -> 1 , otherwise는 0(or -1)이다.
+  - perceptron은 weights, summation prodessor, activation function으로 구성되어있다.
+  - perceptron은 inputs와 outputs의 sum을 가중치로 가지고 있다.
+  - sum이 threshold value(theta) 보다 크면 -> 1 , otherwise는 0(or -1)이다.
   
   
