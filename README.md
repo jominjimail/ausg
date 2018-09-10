@@ -1,6 +1,3 @@
 # AUSG
 
-## AWSKRUG
-## University
-## Student
-## Group
+## AWSKRUG University Student Group
