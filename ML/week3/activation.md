@@ -66,6 +66,8 @@
 
 ![Alt text](./images/s4.png)
 >> B 학습 데이터 softmax 함수
+  - sigmoid 함수의 출력값에 비해 soft max 함수 출력값이 뚜렷하게 구분되어 보다 공정하게 평가할 수 있다. 
+  
 
 ### total 
 ![Alt text](./images/total.png)
