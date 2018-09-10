@@ -1,0 +1,11 @@
+/* Enter Your Custom CSS Here */
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /*구글에서 나눔폰트 가져오기 */
+header { font-family: 'Nanum Gothic','Malgun Gothic', serif; }
+header { font-size: 34px;}
+body { font-family: 'Nanum Gothic','Malgun Gothic', serif; }
+body { font-size: 14px;}
+.entry-title { font-size: 30px}
+h1 { font-size: 28px;}
+h2 { font-size: 28px;}
+h3 { font-size: 28px;}
+h4 { font-size: 28px;}
