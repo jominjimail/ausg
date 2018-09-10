@@ -9,7 +9,7 @@
   
   
 ### 종류
-1. #### 시그모이드 함수(로지스틱 함수) : Curved in two directions, like the letter "S"
+1. ### 시그모이드 함수(로지스틱 함수) : Curved in two directions, like the letter "S"
     - 수식 : $\sigma (wx+b)=\frac { { e }^{ wx+b } }{ 1+{ e }^{ wx+b } } $
     - 범위 : (0,1)
     - 시그모이드 함수는 완전히 값을 전달하지 않거나(0) 혹은 완전히 전달한다(1)는 특성 때문에 실제 인테의 뉴런과 유사하다고 생각되어 널리 사용되었으나, 현재는 점차 사용하지 않는 추세입니다. 
