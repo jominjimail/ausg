@@ -131,3 +131,38 @@ def xorPerceptron(x1 , x2):
     return y
 ```
 
+### - numpy를 사용해서 activation function 다층 구현하기
+
+### 1. sig sig sig 
+```python
+def feedForward(neuralNetwork , ia):
+    W1, W2, W3 = neuralNetwork['W1'], neuralNetwork['W2'], neuralNetwork['W3']
+    b1, b2, b3 = neuralNetwork['b1'], neuralNetwork['b2'], neuralNetwork['b3']
+    
+    z1 = sigmoid(np.dot(ia , W1) + b1)
+    print("1st 은닉층 값 : " + str(z1))
+    
+    z2 = sigmoid(np.dot(z1 , W2) + b2)
+    print("2nd 은닉층 값 : " + str(z2))
+    
+    y = sigmoid(np.dot(z2 , W3) + b3)
+    return y
+```
+### 2. sig sig sig soft
+```python
+def feedForward_soft(neuralNetwork , ia):
+    W1, W2, W3 = neuralNetwork['W1'], neuralNetwork['W2'], neuralNetwork['W3']
+    b1, b2, b3 = neuralNetwork['b1'], neuralNetwork['b2'], neuralNetwork['b3']
+    
+    z1 = sigmoid(np.dot(ia , W1) + b1)
+    print("1st 은닉층 값 : " + str(z1))
+    
+    z2 = sigmoid(np.dot(z1 , W2) + b2)
+    print("2nd 은닉층 값 : " + str(z2))
+    
+    z3 = sigmoid(np.dot(z2 , W3) + b3)
+    print("3rd 은닉층 값 : " + str(z3))
+    
+    y = softmax(z3)
+    return y
+```
