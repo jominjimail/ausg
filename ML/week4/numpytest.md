@@ -144,6 +144,8 @@ def xorPerceptron(x1 , x2):
 
 ## - numpy를 사용해서 activation function 다층 구현하기
 
+[2_floor perceptron](http://localhost:8890/notebooks/Documents/GitHub/ausg/ML/week4/test/numpy_2floor_perceptron.ipynb)
+
 ### 1. sig sig sig 
 
 ```python
