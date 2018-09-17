@@ -6,7 +6,7 @@ Numpy는 파이썬이 계산과학분야에 이용될때 핵심 역할을 하는
 
 
 
-### - numpy를 사용하여 Activation function 구현하기
+## - numpy를 사용하여 Activation function 구현하기
 
 [jupyter로 actication function구현](https://github.com/jominjimail/ausg/blob/master/ML/week4/test/numpy_activation_function.ipynb)
 
@@ -89,7 +89,7 @@ over_result = softmax_sol(over)
 
 
 
-### - numpy를 사용하여 단층 Perceptron 구현하기
+## - numpy를 사용하여 단층 Perceptron 구현하기
 
 [jupyter로 Perceptron구현](https://github.com/jominjimail/ausg/blob/master/ML/week4/test/numpy_myperceptron.ipynb)
 
@@ -129,7 +129,7 @@ def orPerceptron(x1, x2):
 ```
 
 
-### - numpy를 사용하여 다층 Perceptron 구현하기
+## - numpy를 사용하여 다층 Perceptron 구현하기
 
 ### 1. XOR
 
@@ -142,7 +142,7 @@ def xorPerceptron(x1 , x2):
 ```
 
 
-### - numpy를 사용해서 activation function 다층 구현하기
+## - numpy를 사용해서 activation function 다층 구현하기
 
 ### 1. sig sig sig 
 
