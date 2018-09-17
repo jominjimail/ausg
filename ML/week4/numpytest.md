@@ -4,7 +4,7 @@ Numpy는 파이썬이 계산과학분야에 이용될때 핵심 역할을 하는
 
 [Numpy 메뉴얼](http://aikorea.org/cs231n/python-numpy-tutorial/#numpy-arrays)
 
-[jupyter로 activation function ](https://github.com/jominjimail/ausg/blob/master/ML/week4/test/numpy_activation_function.ipynb)
+[jupyter로 구현해보기](https://github.com/jominjimail/ausg/blob/master/ML/week4/test/numpy_activation_function.ipynb)
 
 
 ### 1. 시그모이드 함수(로지스틱 함수) : Curved in two directions, like the letter "S"
