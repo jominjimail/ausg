@@ -22,6 +22,7 @@ x = np.linspace(-8, 8, 100)  # -8 ~ 8 사이의 100개의 값 생성
 sig = sigmoid(x) 
 ```
 
+
 ### 2. 하이퍼볼릭 탄젠트 : 
 ```python
 def tanh(x): 
@@ -46,6 +47,8 @@ def relu(x):
 x = np.linspace(-10, 10, 100) 
 ReLu = relu(x)  
 ```
+
+
 ### 4. Leaky 렐루 :
 ```python
 def Leaky_relu(x): 
@@ -68,6 +71,8 @@ def identity(x):
 x = np.linspace(-10, 10, 100)  
 iden = identity(x)  
 ```
+
+
 ### 6. 소프트 맥스 : softmax
 ```python
 def softmax_sol(x):
@@ -98,6 +103,8 @@ def andPerceptron(x1, x2):
     elif netInput > theta:
         return 1
 ```
+
+
 ### 2. NAND
 ```python
 def nandPerceptron(x1, x2):
@@ -108,6 +115,7 @@ def nandPerceptron(x1, x2):
     elif netInput > theta:
         return 1
 ```
+
 
 ### 3. OR
 ```python
@@ -120,7 +128,9 @@ def orPerceptron(x1, x2):
         return 1
 ```
 
+
 ### - numpy를 사용하여 다층 Perceptron 구현하기
+
 ### 1. XOR
 
 ```python
@@ -131,9 +141,11 @@ def xorPerceptron(x1 , x2):
     return y
 ```
 
+
 ### - numpy를 사용해서 activation function 다층 구현하기
 
 ### 1. sig sig sig 
+
 ```python
 def feedForward(neuralNetwork , ia):
     W1, W2, W3 = neuralNetwork['W1'], neuralNetwork['W2'], neuralNetwork['W3']
@@ -148,6 +160,8 @@ def feedForward(neuralNetwork , ia):
     y = sigmoid(np.dot(z2 , W3) + b3)
     return y
 ```
+
+
 ### 2. sig sig sig soft
 ```python
 def feedForward_soft(neuralNetwork , ia):
