@@ -6,6 +6,7 @@ Numpy는 파이썬이 계산과학분야에 이용될때 핵심 역할을 하는
 
 
 
+
 ```python
 def sigmoid(x): 
     a = []  
