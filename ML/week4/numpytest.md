@@ -3,7 +3,7 @@
 Numpy는 파이썬이 계산과학분야에 이용될때 핵심 역할을 하는 라이브러리입니다. Numpy는 고성능의 다차원 배열 객체와 이를 다룰 도구를 제공합니다. 만약 MATLAB에 익숙한 분이라면 Numpy 학습을 시작하는데 있어 이 튜토리얼이 유용할 것입니다.
 
 [Numpy 메뉴얼](http://aikorea.org/cs231n/python-numpy-tutorial/#numpy-arrays)
-
+[jupyter로 activation function ](https://github.com/jominjimail/ausg/blob/master/ML/week4/test/numpy_activation_function.ipynb)
 
 
 ### 1. 시그모이드 함수(로지스틱 함수) : Curved in two directions, like the letter "S"
