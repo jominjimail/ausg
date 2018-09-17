@@ -4,7 +4,7 @@ Numpy는 파이썬이 계산과학분야에 이용될때 핵심 역할을 하는
 
 [Numpy 메뉴얼](http://aikorea.org/cs231n/python-numpy-tutorial/#numpy-arrays)
 
-```
+```python
 import numpy as np
 
 a = np.array([1, 2, 3]) 
