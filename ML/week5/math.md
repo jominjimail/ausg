@@ -13,7 +13,8 @@
   : absolute value는 실수가 실수선의 원점과, 복소수가 복소평면의 원점과 떨어진 거리를 나타내는 음이 아닌 실수이다.
   
   : Euclidean distance는 두 점 사이의 거리를 계산할 때 흔히 쓰는 방법이다. 
-  - ![Alt text](./image/12.png)
+  
+  ![Alt text](./image/12.png)
   
 - 수열
 
