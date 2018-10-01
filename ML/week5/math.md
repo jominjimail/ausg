@@ -26,6 +26,7 @@
   - n번쨰항까지의 합
   ![Alt text](./image/14.png)
   - 수열의 합과 일반항과의 관계
+  
   ![Alt text](./image/15.png)
   - 대표적으로 등차수열, 등비수열, 조화수열이 있다.
 
@@ -38,7 +39,8 @@
   : 함수 f가 일정 구간 안의 모든 점에서 미분 간으하고 구간 내 임의의 점 c에서 1차 미분이 0이면 (f'(c) =0) 함수 f는 점 c에서 지역 최대값이나 최소값을 갖는다.
   - 함수 f(x)의 최대값은 함수의 양 끝 값과 극대값중 가장 큰 값이다.
   - 함수 f(x)의 최소값은 함수의 양 끝 값과 극소값중 가장 작은 값이다.
-  - ![Alt text](./image/4-1.png)
+  
+  ![Alt text](./image/4-1.png)
   
   
 - 극대값, 극소값
@@ -46,23 +48,29 @@
   : 미분가능한 함수 f(x)가 x=a 에서 극값을 가지면 f'(a) = 0이다.
   - 극대점 f'(a)=0 이고 x=a의 좌우에서 f'(x)의 부호가 (+)에서 (-)로 바뀌면 f(x)는 x=a에서 극대이고, f(a)는 극대값이 된다.
   - 극소점 f'(b)=0 이고 x=b의 좌우에서 f'(x)의 부호가 (-)에서 (+)로 바뀌면 f(x)는 x=b에서 국소이고, f(b)는 극소값이 된다.
-  - ![Alt text](./image/4-3.png)
+  
+  ![Alt text](./image/4-3.png)
   
   
 - 합성함수 미분
   - 합성합수의 미분법 1
-  - ![Alt text](./image/16.png)
-  - ![Alt text](./image/17.png)
+  
+  ![Alt text](./image/16.png)
+  
+  ![Alt text](./image/17.png)
   
   - 합성합수의 미분법 2
-  - ![Alt text](./image/18.png)
-  - ![Alt text](./image/19.png)
+  
+  ![Alt text](./image/18.png)
+  
+  ![Alt text](./image/19.png)
 
 - 상미분, 편미분 (유형에 의한 분류)
   - 상미분
   
   : 한 개 또는 그 이상의 종속변수의 단 하나의 독립변수에 대한 도함수들만을 포함하는 방정식을 상미분방정식(ODE: orfinary differential equation)이라 한다.
-  - ![Alt text](./image/20.png)
+  
+  ![Alt text](./image/20.png)
   
   [상미분방정식 모델링 예시](http://blog.naver.com/PostView.nhn?blogId=la6354&logNo=220605971726&categoryNo=21&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)
 
@@ -70,7 +78,8 @@
   - 편미분
   
   : 한 개 또는 그 이상의 종속변수의 두 개 이상의 독립변수에 대한 편도함수들을 포함하는 방정식을 편미분방정식(PDE: partial differentail equation)이라 한다.
-  - ![Alt text](./image/21.png)
+  
+  ![Alt text](./image/21.png)
   
 
 ## 3. 선형대수
@@ -78,56 +87,69 @@
 - 벡터, 스칼라
 
   : vector 방향과 크기의 의미를 모두 포함하는 표현 도구입니다.
-  - ![Alt text](./image/7-1.png)
+  
+  ![Alt text](./image/7-1.png)
   
   : scalar는 크기와 방향을 가지는 벡터에 대비하는 개념으로, 크기만 있고 방향을 가지지 않은 양을 말한다. 벡터의 크기는 스칼라이다. 
   
   좌표계가 변함에 따라 벡터의 각 성분은 바뀐다. 그러나 벡터의 크기는 스칼라이고 좌표계가 변해도 그 값은 불변이다. 이 그림에서 (x,y) 로 표현되는 좌표계에서 굵은 선으로 표시한 벡터의 성분은 (5,0)이지만, 벡터 자체가 변하지 않음에도 좌표계가 (x', y')으로 바뀌었을 때 각 성분은 (4,3)으로 바뀌었다. 하지만 두 좌표계에서 벡터v의 크기는 5로 불변이고 따라서 스칼라이다.
   
-  - ![Alt text](./image/7-2.png)
-  - ![Alt text](./image/22.png)
+  
+  ![Alt text](./image/7-2.png)
+  
+  ![Alt text](./image/22.png)
   
   
 - 내적, 외적
   
   - 내적은 scalar product(스칼라곱) 또는 Dot product라고 한다. 
-  - ![Alt text](./image/23.png)
+  
+  ![Alt text](./image/23.png)
   - 내적값과 벡터의 크기를 안다면 사이각을 구할 수 있다. 이게 첫번째 내적ㅇ의 의의이다. 
   - 영이 아닌 두 벡터 사이의 각이 직각일 때 두 벡터는 서로 수직 또는 직교한다고 한다. 두 벡터가 수직할 필요출중조건은 
-  - ![Alt text](./image/24.png)
+  
+  ![Alt text](./image/24.png)
   - 정사영 문제 (수선의 발)
   
   - 외적은 3차원에서만 정의되는게 큰 특징이다. 유클리드 공간상에서만 쓸 수 있다.(오른손의 법칙)
-  - ![Alt text](./image/25.png)
+  
+  ![Alt text](./image/25.png)
   - 외적의 결과는 내적과 달리 벡터이다. 평행하지 않은 두 벡터를 외적한 결과는 그 두 벡터와 수직이기 때문이다.
   - 외적을 이용하면 두 벡터가 평행하다는게 아주 근사하게 설명된다. 
   
 - L1 norm, L2 norm
   - Norm은 벡터의 길이 혹은 크기를 측정하는 함수입니다. Norm이 측정한 벡터의 크기는 원점에서 벡터 좌표까지의 거리 혹은 Magnitude라고 합니다.
-  - ![Alt text](./image/26.png)
+  
+  ![Alt text](./image/26.png)
     * p는 Lorm의 차수를 의미합니다. p가 1dlaus L1 Norm이고 p가 2dlaus L2 Norm입니다.
     * n은 대상 벡터의 요소 수입니다.
    - L1 Norm을 Taxicab Norm 혹은 Manhattan norm이라고도 합니다. L1 norm은 벡터의 요소에 대한 절대값의 합입니다. 요소의 값 변화를 정확하게 파악할 수 있습니다. L1 regularization, computer visiton 영역에서 사용됩니다.
-   - ![Alt text](./image/27.png)
+   
+   ![Alt text](./image/27.png)
    - L2 Norm은 p가 2인 Norm입니다. n차원 좌표평면에서의 벡터의 크기를 계산하기 때문에 유클리드 노름이라고도 합니다. L2 regularization, KNN알고리즘, Kmean 알고리즘에서 사용됩니다.
    
     
   
 - 행렬계산
    - 행렬 덧셈
-   - ![Alt text](./image/10-1.png)
+   
+   ![Alt text](./image/10-1.png)
    - 스칼라 곱
-   - ![Alt text](./image/10-2.png)
+   
+   ![Alt text](./image/10-2.png)
    - 전치
-   - ![Alt text](./image/10-3.png)
+   
+   ![Alt text](./image/10-3.png)
    - 행렬 곱셈
-   - ![Alt text](./image/10-4.png)
+   
+   ![Alt text](./image/10-4.png)
 
 - 고윳값, 고유벡터
 
   : 고유 벡터는 그 선형 변환이 일어난 후에도 방향이 변하지 않는, 영벡터가 아닌 벡터이다. 
   - n차 정사각 행렬 A와 0 이 아닌 벡터 x (R^n차원에 속함)에 대해 Ax = cx를 만족하는 실수 c가 존재할때 c를 A의 고윳값이라 한다. 또한 고윳값 c에 대응하는 벡터 x를 A의 고유벡터라고 한다. 
-  - ![Alt text](./image/28.png)
+  
+  ![Alt text](./image/28.png)
   
 
 ## 4. 확률과 통계
