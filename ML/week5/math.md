@@ -47,7 +47,8 @@
   - 상미분
   
   : 한 개 또는 그 이상의 종속변수의 단 하나의 독립변수에 대한 도함수들만을 포함하는 방정식을 상미분방정식(ODE: orfinary differential equation)이라 한다.
-  
+  [상미분방정식 모델링 예시](http://blog.naver.com/PostView.nhn?blogId=la6354&logNo=220605971726&categoryNo=21&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)
+
   
   - 편미분
   : 한 개 또는 그 이상의 종속변수의 두 개 이상의 독립변수에 대한 편도함수들을 포함하는 방정식을 편미분방정식(PDE: partial differentail equation)이라 한다.
