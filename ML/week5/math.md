@@ -20,11 +20,11 @@
   - 수열의 각수를 '항'이라 한다.
   - 유한수열, 무한수열이 있다.
   - 일반항(n번째항) 
-  - ![Alt text](./image/13.png)
+  ![Alt text](./image/13.png)
   - n번쨰항까지의 합
-  - ![Alt text](./image/14.png)
+  ![Alt text](./image/14.png)
   - 수열의 합과 일반항과의 관계
-  - ![Alt text](./image/15.png)
+  ![Alt text](./image/15.png)
   - 대표적으로 등차수열, 등비수열, 조화수열이 있다.
 
 ## 2. 미분 Differentiation
