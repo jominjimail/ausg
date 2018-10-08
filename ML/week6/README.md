@@ -18,17 +18,17 @@
   
 ![Alt text](./image/3.png)
 
-    - training example 들이 parameter 추정에 이용된다,
-    - h(x)가 y와 비슷해지는 세타를 고르는 것이다. 
-    - error 값을 최소화하는 값을 찾는것이다. 하지만 error값은 양수값이 될수도 있고 음수값일 수도 있기때문에 제곱값의 합을 구하여 그 합이 최소가 되는 parameter를 찾는 방법이 일반적이다. 이를 LSE(least squared error) criterion이라고 한다.
+  - training example 들이 parameter 추정에 이용된다,
+  - h(x)가 y와 비슷해지는 세타를 고르는 것이다. 
+  - error 값을 최소화하는 값을 찾는것이다. 하지만 error값은 양수값이 될수도 있고 음수값일 수도 있기때문에 제곱값의 합을 구하여 그 합이 최소가 되는 parameter를 찾는 방법이 일반적이다. 이를 LSE(least squared error) criterion이라고 한다.
   
 ![Alt text](./image/6.png)
 
-    - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다.     
-    - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
+  - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다.     
+  - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
  
 ![Alt text](./image/7.png)
-    - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
+  - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
   
 ![Alt text](./image/8.png)
   
