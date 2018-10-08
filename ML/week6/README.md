@@ -4,40 +4,38 @@
 - the hypothesis funcion이란: input(feature)과 output(target)의 관계를 나타내는 함수이다. output값이 나오게 하는 진짜 변수들과 그 변수와 output 사이의 관계식을 정확히 정의하는것은 불가능하다. 우리는 어마어마한 변수들을 모두 고려하고 그 변수들 간의 복잡한 방정식을 찾는 대신 주로 이러이러한 변수들이 output에 영향을 미칠거야 하고 추정하는 일종의 가설을 세우기 때문에 hypothesis라고 부르기 시작한 것으로 여겨진다. 
 
 - linear regression에서의 hypothesis function:
+
 ![Alt text](./image/1.png)
 
 - logistic regression에서의 hypothesis function:
+
 ![Alt text](./image/2.png)
 
 
 ## Cost functions
-- linear regression 의 const function:
+
+### linear regression 의 const function:
   - 주어진 데이터에 가장 잘 맞는 직선을 선택하려면 일정한 기준이 있어야 한다. 우리의 hypothesis funcgion의 정확도를 측정하기 위해 cost function을 이용할 것이다. 
   
 ![Alt text](./image/3.png)
-
-  - training example 들이 parameter 추정에 이용된다,
-  - h(x)가 y와 비슷해지는 세타를 고르는 것이다. 
-  - error 값을 최소화하는 값을 찾는것이다. 하지만 error값은 양수값이 될수도 있고 음수값일 수도 있기때문에 제곱값의 합을 구하여 그 합이 최소가 되는 parameter를 찾는 방법이 일반적이다. 이를 LSE(least squared error) criterion이라고 한다.
-  
-![Alt text](./image/6.png)
-
-
+   - training example 들이 parameter 추정에 이용된다,
+   - h(x)가 y와 비슷해지는 세타를 고르는 것이다. 
+   - error 값을 최소화하는 값을 찾는것이다. 하지만 error값은 양수값이 될수도 있고 음수값일 수도 있기때문에 제곱값의 합을 구하여 그 합이 최소가 되는 parameter를 찾는 방법이 일반적이다. 이를 LSE(least squared error) criterion이라고 한다.
+   - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다.     
+   - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
+ 
 ![Alt text](./image/7.png)
+   - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
+  
+![Alt text](./image/8.png) 
 
-  - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다. 
-  - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
-  - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
-  
-![Alt text](./image/8.png)
-  
-- logsitic regression 의 cost function:
+
+### logsitic regression 의 cost function:
   - linear regressio의 cost function의 LSE criterion을 그래도 사용하면 logsitic regression의 cost function은 non-convex function이 된다. 그래서 조금 다르게 정의한다.
   
 ![Alt text](./image/4.png)
 
 ![Alt text](./image/5.png)
-
   - 이 cost function의 특징은 
     - Maximum likelihood estimation criterion
     - Convex
@@ -56,18 +54,19 @@
   
 ![Alt text](./image/9.png)
 
-
 ![Alt text](./image/10.png)
 
-- linear regression에 gradient descent적용해보기
+### linear regression에 gradient descent적용해보기
+
+![Alt text](./image/6.png)
   - linear regression에서 정의한 cost funcgion을 J(Theta0, Theta1)에 대입하면 된다.
   - linear regression cost function은 convex이므로 항상 global optimal에 수렴한다.
 
-- logsitic regression에 gradient descent적용해보기
+
+### logsitic regression에 gradient descent적용해보기
   - cost function을 최소화하는 parameter Theta를 찾는 것이 목적이다. J(Theta)가 Convec이므로, gradient descent에 의해 optimal Theta를 찾을 수 있다. 
   
 ![Alt text](./image/11.png)
-
 
 ![Alt text](./image/12.png)
   
@@ -75,8 +74,20 @@
 ## Learning rate alpha
 - 상수 Alpha > 0 은 learning rate라고 한다. 이 크기가 클수록 한번에 더 많이 움직이게 되는 것이다.
 - 편미분항은 다음에 이동할 방향과 크기를 결정한다. 기울기의 반대방향으로 움직이는데, 기울기가 클수록 더 많이 움직인다.
-
 - learning rate Alpha가 너무 작으면 수렴하는데에 오래걸리는 문제가 생기고, 너무 크면 최소값에 이르지 못해, 수렴하지 못하거나 심지어 발산하는 문제가 생길수 있다. 그러므로 적절한 learning rate를 고르는 것이 중요하다.
 
 ## Batch and Mini batch
 - "Batch" : Gradient descent의 매 단계에서 모든 training example을 사용한다.
+- 한번의 interation을 위해 들어가는 input data이다.
+- mini-batch는 한번의 iteration에 인풋 데이터로 한개를 쓰는 경우와 전체 데이터셋을 쓰는 두경우에 비해 어떤 장점이 있을까
+- 데이터를 한개 쓰는 경우 장점: 
+  - iteration 한번 수행하는데 소요되는 시간이 매우 짧다. cost function의 최적의 값을 찾아가는 과정을 한걸음 한걸음 inimum을 향해 걸어가는 것으로 생각한다면 매우 빠르게 걸을 수 있다.
+- 데이터를 한개 쓰는 경우 단점: 
+  - 데이터 전체의 경향을 반영하기 힘들다.
+  - 하드웨어입장에서 비효울적이다. 데이터 한개만 학습에 사용하면 병렬연산을 안쓰는 것이나 마찬가지이다.
+- 전체 데이터를 쓰는 경우 장점:
+  - 전체 데이터를 반영하여 한걸음한결음 내딛는다. 즉, cost function의 값을 줄이는 양질의 이동을 하게 된다.
+- 전체 데이터를 쓰는 경우 단점:
+  - 데이터셋의 크기가 커질 경우 iteration을 한번 수행하는데 소요되는 시간이 매우 길다. 
+  - 하드웨어 입장에 부담스럽다. 
+- 결국 데이터를 한개 쓰면 빠르지만 너무 헤매고, 전체를 쓰면 정확하지만 너무 느립니다. 즉, 적당히 빠르고 적당히 정확한 길을 찾기 위해 mini-batch를 사용합니다. 
