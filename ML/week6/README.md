@@ -20,11 +20,7 @@
 ## Gradient Descent Algorithm
 - Gradient Descent 는 cost funcgion을 최소화하기 위해 이용할 수 있는 방법 중 하나이며, cost function말고도 각종 optimization에 이용되는 일반적인 방법이다. 
 
-> Gradient Descent Outline : start 
-
-> start with some Theta0, Theta1 ( Theta0 = 0 , Theta1 = 1)
-
-> keep changing Theta0, Theta1 to reduce J(Theta0, Theta1) until we hopefully end up at minimum.
+> Gradient Descent Outline : > start with some Theta0, Theta1 ( Theta0 = 0 , Theta1 = 1) > keep changing Theta0, Theta1 to reduce J(Theta0, Theta1) until we hopefully end up at minimum.
 
 ## Learning rate
 
