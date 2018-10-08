@@ -24,10 +24,10 @@
   
 ![Alt text](./image/6.png)
 
-![Alt text](./image/7.png)
-
   - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다. 
   - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
+ 
+![Alt text](./image/7.png)
   - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
   
 ![Alt text](./image/8.png)
