@@ -21,8 +21,6 @@
    - training example 들이 parameter 추정에 이용된다,
    - h(x)가 y와 비슷해지는 세타를 고르는 것이다. 
    - error 값을 최소화하는 값을 찾는것이다. 하지만 error값은 양수값이 될수도 있고 음수값일 수도 있기때문에 제곱값의 합을 구하여 그 합이 최소가 되는 parameter를 찾는 방법이 일반적이다. 이를 LSE(least squared error) criterion이라고 한다.
-  
-![Alt text](./image/6.png)
    - 이 cost function은 mean-squared-error (MSE) 이다. 즉 (error)^2의 평균이 cost값이 된다.     
    - 여기서 error란, 추정한 y값과 y.hat 값의 차이를 말한다. 
  
@@ -59,6 +57,8 @@
 ![Alt text](./image/10.png)
 
 ### linear regression에 gradient descent적용해보기
+
+![Alt text](./image/6.png)
   - linear regression에서 정의한 cost funcgion을 J(Theta0, Theta1)에 대입하면 된다.
   - linear regression cost function은 convex이므로 항상 global optimal에 수렴한다.
 
