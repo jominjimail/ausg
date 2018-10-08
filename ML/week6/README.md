@@ -13,6 +13,7 @@
 
 
 ## Cost functions
+
 ### linear regression 의 const function:
   - 주어진 데이터에 가장 잘 맞는 직선을 선택하려면 일정한 기준이 있어야 한다. 우리의 hypothesis funcgion의 정확도를 측정하기 위해 cost function을 이용할 것이다. 
   
@@ -29,6 +30,7 @@
    - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
   
 ![Alt text](./image/8.png) 
+
 
 ### logsitic regression 의 cost function:
   - linear regressio의 cost function의 LSE criterion을 그래도 사용하면 logsitic regression의 cost function은 non-convex function이 된다. 그래서 조금 다르게 정의한다.
@@ -56,11 +58,12 @@
 
 ![Alt text](./image/10.png)
 
-- linear regression에 gradient descent적용해보기
+### linear regression에 gradient descent적용해보기
   - linear regression에서 정의한 cost funcgion을 J(Theta0, Theta1)에 대입하면 된다.
   - linear regression cost function은 convex이므로 항상 global optimal에 수렴한다.
 
-- logsitic regression에 gradient descent적용해보기
+
+### logsitic regression에 gradient descent적용해보기
   - cost function을 최소화하는 parameter Theta를 찾는 것이 목적이다. J(Theta)가 Convec이므로, gradient descent에 의해 optimal Theta를 찾을 수 있다. 
   
 ![Alt text](./image/11.png)
