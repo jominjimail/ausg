@@ -1,5 +1,4 @@
-## week 6 
-## Gradient Descent Algorithm
+## week 6 Gradient Descent Algorithm
 
 ## Cost functions
 
