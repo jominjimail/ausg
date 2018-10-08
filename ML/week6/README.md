@@ -13,7 +13,7 @@
 
 
 ## Cost functions
-- linear regression 의 const function:
+### linear regression 의 const function:
   - 주어진 데이터에 가장 잘 맞는 직선을 선택하려면 일정한 기준이 있어야 한다. 우리의 hypothesis funcgion의 정확도를 측정하기 위해 cost function을 이용할 것이다. 
   
 ![Alt text](./image/3.png)
@@ -28,8 +28,9 @@
 ![Alt text](./image/7.png)
    - 다만 평균이라면 data 갯수인 m으로 나누어야 하는데 2m으로 나누었다. 2는 계산상의 편의를 위한 것으로 나중에 약분되는 것을 확인하게 될것이다.
   
-![Alt text](./image/8.png)  
-- logsitic regression 의 cost function:
+![Alt text](./image/8.png) 
+
+### logsitic regression 의 cost function:
   - linear regressio의 cost function의 LSE criterion을 그래도 사용하면 logsitic regression의 cost function은 non-convex function이 된다. 그래서 조금 다르게 정의한다.
   
 ![Alt text](./image/4.png)
