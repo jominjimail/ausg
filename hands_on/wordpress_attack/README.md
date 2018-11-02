@@ -19,6 +19,7 @@ wp와 attck을 xshell에 연결해준다.
 새로 만들기 해서 연결해준다.
 
 사용자 인증은 aws instance할때 생성받은 public key로 지정해준다.
+사용자 이름은 ubuntu라고 정해준다. 나는 ubuntu
 
 ssh -i "awspwd.pem" ubuntu@ec2-13-230-102-248.ap-northeast-1.compute.amazonaws.com 
 명령어를 쳐서 연결해준다.
