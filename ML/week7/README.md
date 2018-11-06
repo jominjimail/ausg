@@ -9,8 +9,6 @@
 ### 계산그래프란?
 - 계산과정을 그래프로 나타냄
 - 노드와 에지로 표현
-
-![Alt text](./image/1.png | width=50)
 <img src="./image/1.png" width="60%">
 
 ### 국소적 계산이란?
@@ -19,7 +17,8 @@
 - 전체가 복잡해도 노드의 단순 계산에 집중 --> 문제 단순화 가능 
 - 중간계산결과 보관
 - 노드 하나하나의 미분의 효울적 계산 가능 
-![Alt text](./image/3.png)
+<img src="./image/3.png" width="60%">
+
 
 ## 역전파
 - 1* 1.1(소비세) = 1.1
@@ -27,24 +26,29 @@
 - 2.2는 입력값에 대한 결과에 대한 영향력의 값이다. 100에서 2.2만큼 영향을 받아 220이 된것이다.
 - 2.2는 미분의 값이다. 기울기값이다. x쪽으로 1만큼 커졌을때 y가 얼마나 변화할까?의 대한 답이다.
 - 2.2는 미분값이지만 실제로 우리는 미분을 사용하진 않았다. 단순한 곱셈으로 계산하였다.
-![Alt text](./image/2.png)
+<img src="./image/2.png" width="60%">
+
 
 ### 연쇄법칙
-![Alt text](./image/5.png)
-![Alt text](./image/6.png)
+<img src="./image/5.png" width="60%">
+<img src="./image/6.png" width="60%">
+
 
 ### 덧셈노드의 역전파
 - 그대로 전달
-![Alt text](./image/7.png)
+<img src="./image/7.png" width="60%">
+
 - 덧셈계층 코드 예시
 
 ### 곱셈노드의 역전파
 - x,y 값 바꿔서 계산
-![Alt text](./image/8.png)
+<img src="./image/8.png" width="60%">
+
 - 곱셈계층 코드 예시
 
 - 사과가게 python 코드 예시
-![Alt text](./image/9.png)
+<img src="./image/9.png" width="60%">
+
 
 ### 마지막에 나온 110, 2.2, 3.3, 165, 650 의 의미
 - 단위 1 이 변경되었을때, 결과값에 미치는 영향력
