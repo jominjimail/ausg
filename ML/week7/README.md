@@ -114,7 +114,7 @@ class MulLayer:
 
 
 
-### ReLu 함수 구현
+### 1. ReLu 함수 구현
 
 
 - 순전파에서 입력값이 0 이상인 경우는 들어온 값을 그대로 전달한다.
@@ -124,15 +124,15 @@ class MulLayer:
 <img src="./image/10.png" width="60%">
 
 
-### sigmoid 함수 구현
+### 2. sigmoid 함수 구현
 
 
 <img src="./image/11.png" width="60%">
-<img src="./image/12.png" width="60%">
-<img src="./image/13.png" width="60%">
+<img src="./image/12.png" width="80%">
+<img src="./image/13.png" width="80%">
 
 
-### affine, sofrmax 함수 구현
+### 3. affine, sofrmax 함수 구현
 
 
 > Affine 계층은 행렬 내적을 기하학에서 어파인 변환(affine transformation)이라고 하고, 어파인 변환을 수행하는 처리를 Affine 계층이라는 이름으로 만든다. 즉, 이전 계층의 모든 뉴런과 연결되어 있어 행렬의 내적(np.dot())을 사용하여 계산하는 계층/레이어를 Affine 계층/레이어라 부른다.
@@ -145,8 +145,8 @@ Y = np.dot(X,W) +B
 ```
  - 배치처리란? 입력값이 10000개라면 하나하나 언제 계산하고 있을까. 컴퓨터가 처리할 수 있는 정도의 양을 배열로 묶어서 한번에 처리하는게 배치처리라한다.
  - X(2) 에서 (N,2) 로 수정한다. N묶음을 한번에 처리하는것이다. (Batch)
- <img src="./image/14.png" width="60%">
+ <img src="./image/14.png" width="80%">
  
- <img src="./image/15.png" width="60%">
+ <img src="./image/15.png" width="80%">
  
 
