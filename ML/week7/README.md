@@ -170,6 +170,6 @@ Y = np.dot(X,W) +B
  
  <img src="./image/15.png" width="80%">
  
- [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/forward_backward.ipynb)
+ [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/affine.ipynb)
  
 
