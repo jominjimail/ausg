@@ -30,7 +30,7 @@
 
 
 ### 연쇄법칙
-<img src="./image/5.png" width="60%">
+<img src="./image/5.png" width="40%">
 <img src="./image/6.png" width="60%">
 
 
