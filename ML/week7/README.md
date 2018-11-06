@@ -11,7 +11,7 @@
 - 노드와 에지로 표현
 
 ![Alt text](./image/1.png | width=50)
-<img src="./image/1.png" width="40%">
+<img src="./image/1.png" width="60%">
 
 ### 국소적 계산이란?
 - 노드에 직접 관계된 정보만으로 계산
