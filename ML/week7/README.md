@@ -126,9 +126,13 @@ class MulLayer:
 
 ### 2. sigmoid 함수 구현
 
-
+- 순전파
 <img src="./image/11.png" width="80%">
+
+- 역전파
 <img src="./image/12.png" width="80%">
+
+- 간소화
 <img src="./image/13.png" width="60%">
 
 
