@@ -135,6 +135,23 @@ class MulLayer:
 - 간소화
 <img src="./image/13.png" width="60%">
 
+- 코드 구현
+```python
+import numpy as np
+class Sigmoid:
+    def __init__(self):
+        self.out = None
+    
+    def forward(self, x):
+        out = 1/(1+np.exp(-x))
+        self.out = out
+        return out
+    
+    def backward(self, dout):
+        dx = dout*(1.0 - self.out)*self.out
+        return dx
+```
+
 
 ### 3. affine, sofrmax 함수 구현
 
@@ -152,5 +169,7 @@ Y = np.dot(X,W) +B
  <img src="./image/14.png" width="80%">
  
  <img src="./image/15.png" width="80%">
+ 
+ [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/forward_backward.ipynb)
  
 
