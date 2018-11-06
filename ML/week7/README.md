@@ -47,7 +47,7 @@
 - 곱셈계층 코드 예시
 
 - 사과가게 python 코드 예시
-<img src="./image/9.png" width="60%">
+<img src="./image/9.png" width="80%">
 
 
 ### 마지막에 나온 110, 2.2, 3.3, 165, 650 의 의미
