@@ -114,9 +114,13 @@ class MulLayer:
 - 순전파에서 입력값이 0 이하인 경우는 0을 전달한다.
 - 역전파에서 입력값이 0 이상인 경우는 들어온 값을 그대로 전달한다.
 - 역전파에서 입력값이 0 이하인 경우는 0을 전달한다.
+<img src="./image/10.png" width="60%">
 
 
 ### sigmoid 함수 구현
+<img src="./image/11.png" width="60%">
+<img src="./image/12.png" width="60%">
+<img src="./image/13.png" width="60%">
 
 
 ### affine, sofrmax 함수 구현
@@ -130,5 +134,10 @@ W = np.random.rand(2,3)
 B = np.random.rand(3)
 Y = np.dot(X,W) +B
 ```
+ - 배치처리란? 입력값이 10000개라면 하나하나 언제 계산하고 있을까. 컴퓨터가 처리할 수 있는 정도의 양을 배열로 묶어서 한번에 처리하는게 배치처리라한다.
+ - X(2) 에서 (N,2) 로 수정한다. N묶음을 한번에 처리하는것이다. (Batch)
+ <img src="./image/14.png" width="60%">
+ 
+ <img src="./image/15.png" width="60%">
  
 
