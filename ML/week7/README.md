@@ -78,7 +78,9 @@ class MulLayer:
         return dx,dy
 ```
 
-- 사과가게 python 코드 예시
+
+[사과가게 python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/forward_backward.ipynb)
+
 <img src="./image/9.png" width="80%">
 
 
