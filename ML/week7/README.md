@@ -41,13 +41,42 @@
 <img src="./image/7.png" width="60%">
 
 - 덧셈계층 코드 예시
-
+'''python
+class AddLayer:
+    def __init__(self):
+        pass
+    
+    def forward(self,x,y):
+        out = x+y
+        return out
+    
+    def backward(self,dout):
+        dx = dout*1
+        dy = dout*1
+        return dx,dy
+'''
 
 ### 3. 곱셈노드의 역전파
 - x,y 값 바꿔서 계산
 <img src="./image/8.png" width="60%">
 
 - 곱셈계층 코드 예시
+'''python
+class MulLayer:
+    def __init__(self):
+        self.x=None
+        self.y=None
+        
+    def forward(self, x, y):
+        self.x =x
+        self.y =y
+        return x*y
+    
+    def backward(self, dout):
+        dx = dout *self.y
+        dy = dout *self.x
+        return dx,dy
+'''
 
 - 사과가게 python 코드 예시
 <img src="./image/9.png" width="80%">
