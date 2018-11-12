@@ -184,7 +184,7 @@ Y = np.dot(X,W) +B
 - sofrmax 함수로 교차 엔트로피 오차를 사용하면 역전파가(y1-t1, y2-t2, y3-t3)로 간단해진다. 이렇게 계산 결과를 단순하고 쉽게 만들기 위해 설계된 것이 교차 엔트로피 오차이다.
 
 - sofr max Cross Entropy Error 예시
-<img src="./image/17.png" width="80%">
+<img src="./image/17.png" width="4=50%">
 
 입력값 (a1, a2, a3) 
 
@@ -194,5 +194,5 @@ Y = np.dot(X,W) +B
 역전파 
 <img src="./image/19.png" width="100%">
 
-<img src="./image/20.png" width="80%">
-<img src="./image/21.png" width="80%">
+<img src="./image/20.png" width="60%">
+<img src="./image/21.png" width="100%">
