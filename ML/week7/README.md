@@ -172,4 +172,5 @@ Y = np.dot(X,W) +B
  
  [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/affine.ipynb)
  
+### softmax-with-Loss 계층
 
