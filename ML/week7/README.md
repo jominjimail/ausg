@@ -195,4 +195,4 @@ Y = np.dot(X,W) +B
 <img src="./image/19.png" width="100%">
 
 <img src="./image/20.png" width="40%">
-<img src="./image/21.png" width="100%">
+<img src="./image/21.png" width="90%">
