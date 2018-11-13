@@ -192,7 +192,7 @@ Y = np.dot(X,W) +B
 <img src="./image/18.png" width="100%">
 
 역전파 
-<img src="./image/19.png" width="100%">
+<img src="./image/19.png" width="50%">
 
 <img src="./image/20.png" width="60%">
 <img src="./image/21.png" width="100%">
