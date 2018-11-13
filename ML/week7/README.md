@@ -168,7 +168,7 @@ Y = np.dot(X,W) +B
  - X(2) 에서 (N,2) 로 수정한다. N묶음을 한번에 처리하는것이다. (Batch)
  <img src="./image/14.png" width="80%">
  
- <img src="./image/15.png" width="80%">
+ <img src="./image/22.png" width="80%">
  
  [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/affine.ipynb)
  
