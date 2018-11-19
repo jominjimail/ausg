@@ -115,6 +115,8 @@
 
    - information gain이란?
       split을 함으로써 부모와 자식의 불순도가 얼마나 차이나는지 비교하기 위해서 고안한 식이다.
+      
+      
       <img src="./image/5.png" width="60%">
 
 ## 11. information gain: Example
@@ -145,6 +147,8 @@
    - 만약, Income Level로 split하면 Gain이 0.695
 
    - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
+   
+   
    <img src="./image/10.png" width="60%">
 
    근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
@@ -154,6 +158,8 @@
       <img src="./image/12.png" width="60%">
 
   - Entropy(S) =**0.722**
+  
+  
      <img src="./image/13.png" width="60%">
 
      - Gender의 Gain =**0.322**
@@ -164,10 +170,18 @@
 
      - 가장 높은 Gender가 다음 속성 node으로 선정되고 또 나눈다. Target Variable인
         Transportation이 pure하게 딱 떨어질 때까지 반복한다. 
-        <img src="./image/14.png" width="60%">
-        <img src="./image/15.png" width="60%">
-        <img src="./image/16.png" width="60%">
+        
+        
+<img src="./image/14.png" width="60%">
+
+
+<img src="./image/15.png" width="60%">
+
+
+<img src="./image/16.png" width="60%">
      - 3회차 반복
-     <img src="./image/17.png" width="60%">
-     <img src="./image/18.png" width="60%">
+     
+<img src="./image/17.png" width="60%"> 
+
+<img src="./image/18.png" width="60%">
      *fin*
