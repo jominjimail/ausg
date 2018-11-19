@@ -81,9 +81,9 @@
 <img src="./image/3.png" width="60%">
      불투명한 주머니에 흰 공 10개, 검은 공이 10개가 들어있다고 하자. 어떤 속성으로 인해 이 주머니가 2개로 나눠졌다. 아래그림을 보면 오른쪽 Good Split 의 자식 주머니의 purity가 왼쪽 Poor Split 보다 높은것을 알 수 있다. 
 
-     - 만약 data group 이 여러개의 classes(several target values)를 가지고 있다면 이것은 impure하다고 말한다.
+   - 만약 data group 이 여러개의 classes(several target values)를 가지고 있다면 이것은 impure하다고 말한다.
 
-     - 만약 data group 이 one class(one target value)를 가지고 있다면 이것은 pure하다고 말한다.
+   - 만약 data group 이 one class(one target value)를 가지고 있다면 이것은 pure하다고 말한다.
 
    - *purity를 increase 하는 방향으로 split을 한다면 이것은 best split방법이 될 것이다.*
 
@@ -102,8 +102,7 @@
    - Entropy란?
 
       impurity를 측정하는 단위이다.
-
-
+      <img src="./image/4.png" width="60%">
 
       > 엔트로피 개념을 좀 더 이해하기 쉽게 설명하자면, 불투명한 주머리가 있다고 가정하자. 이 주머니 속에 하얀색 공만 있다면?
       >
@@ -118,15 +117,14 @@
    - information gain이란?
 
       split을 함으로써 부모와 자식의 불순도가 얼마나 차이나는지 비교하기 위해서 고안한 식이다.
+      <img src="./image/5.png" width="60%">
 
 ## 11. information gain: Example
 
    - data set
-
-
-
+   <img src="./image/6.png" width="80%">
       target variable인 Transportation의 엔트로피 값은 **1.571**
-
+   <img src="./image/7.png" width="60%">
    - 만약, Gender로 split을 할 경우
 
       Target인 버스, 전철, 차고 각각 분류해서 
@@ -134,9 +132,9 @@
       남성5명 (버스3 + 전철1 + 차1)의 Entropy를 구해 1.37
 
       여성5명 (버스1 + 전철2 + 차2)의 Entropy를 구해 1.522
-
+<img src="./image/9.png" width="60%">
       Information gain 식에 대입하면 
-
+<img src="./image/8.png" width="60%">
    - 만약, Car ownership으로 split하면 Gain이 0.534
 
    - 만약, Travel Cost로 split하면 Gain이 **1.210**
@@ -144,12 +142,16 @@
    - 만약, Income Level로 split하면 Gain이 0.695
 
    - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
+   <img src="./image/10.png" width="60%">
 
       근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
 
       분류된 부분은 제거하고 계산이 필요한 부분만 남겨서 다시 Target Variable의 Entropy(S)를 새로 구하고 똑같이 계산해준다. 
+      <img src="./image/11.png" width="60%">
+      <img src="./image/12.png" width="60%">
 
      - Entropy(S) =**0.722**
+     <img src="./image/13.png" width="60%">
 
      - Gender의 Gain =**0.322**
 
@@ -159,3 +161,10 @@
 
      - 가장 높은 Gender가 다음 속성 node으로 선정되고 또 나눈다. Target Variable인
         Transportation이 pure하게 딱 떨어질 때까지 반복한다. 
+        <img src="./image/14.png" width="60%">
+        <img src="./image/15.png" width="60%">
+        <img src="./image/16.png" width="60%">
+     - 3회차 반복
+     <img src="./image/17.png" width="60%">
+     <img src="./image/18.png" width="60%">
+     *fin*
