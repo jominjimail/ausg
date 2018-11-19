@@ -131,6 +131,8 @@
       여성5명 (버스1 + 전철2 + 차2)의 Entropy를 구해 1.522
 
    Information gain 식에 대입하면 
+   
+   
    <img src="./image/9.png" width="60%">
    
    
