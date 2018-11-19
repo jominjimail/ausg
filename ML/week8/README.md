@@ -122,18 +122,15 @@
    - data set
    <img src="./image/6.png" width="80%">
       target variable인 Transportation의 엔트로피 값은 **1.571**
+      
    <img src="./image/7.png" width="60%">
    - 만약, Gender로 split을 할 경우
-
      Target인 버스, 전철, 차고 각각 분류해서 
-
      남성5명 (버스3 + 전철1 + 차1)의 Entropy를 구해 1.37
-
      여성5명 (버스1 + 전철2 + 차2)의 Entropy를 구해 1.522
-    <img src="./image/9.png" width="60%">
-
 
    Information gain 식에 대입하면 
+   <img src="./image/9.png" width="60%">
    <img src="./image/8.png" width="60%">
 
 
