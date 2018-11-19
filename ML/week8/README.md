@@ -46,6 +46,8 @@
    - each leaf node는 classification value을 적는다.
 
    아래 예시는 'outlook' 속성이 있고 이 속성의 value 값으로 sunny, overcast, rain이 있고 리프 노드의 값은 날씨에 따라 테니스를 치러 나갈것인가 YES, 안 나갈것인가를 NO정하는 classification value 이다.
+   
+   <img src="./image/1.png" width="60%">
 
    ```c
    #play tennis rule in your brain:
@@ -59,6 +61,8 @@
 
 ## 6. decision tree types
    - binary decision trees - only two choices in each split (성적 예시)
+   <img src="./image/2.png" width="60%">
+   
    - N-way or ternary decision trees - three or more choices in at least one of its split (테니스 예시)
 
 ## 7. tree split
@@ -74,7 +78,7 @@
    - best split을 하기 위해 각 속성으로 분류했을때 나오는 자식들의 homogeneous 속성을 평가하면 된다. 즉, 동족성이다. 이 속성을 purity 순도라고 한다. 
 
    - 간단한 예시를 들어보자
-
+<img src="./image/3.png" width="60%">
      불투명한 주머니에 흰 공 10개, 검은 공이 10개가 들어있다고 하자. 어떤 속성으로 인해 이 주머니가 2개로 나눠졌다. 아래그림을 보면 오른쪽 Good Split 의 자식 주머니의 purity가 왼쪽 Poor Split 보다 높은것을 알 수 있다. 
 
      - 만약 data group 이 여러개의 classes(several target values)를 가지고 있다면 이것은 impure하다고 말한다.
