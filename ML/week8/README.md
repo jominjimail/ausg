@@ -18,25 +18,20 @@
 
 ## 3.  의사결정 트리의 장점은?
 
-   - 계산 비용이 적다.
-
-   - 결과를 해석하고 이해하기 쉽다.
-
-   - 자료를 가공할 필요가 거의 없다.
-
-   - 수치 자료와 범주 자료 모두에 적용할 수 있다.
-
+   - easy to understand 이해하기 쉽다.
+   - mapped nicedly to a set of business rules
+   - applied to a variety of real classfication and prediction problems
+   - make no prior assumptions about the data 자료를 가공할 필요가 거의 없다.
+   - able to process both numerical and categorial attrubutes in data 수치 자료와 범주 자료 모두에 적용할 수 있다.
    - 대규모의 데이터 셋에서도 잘 동작한다. 특히 속성이 많은 data를 유연하게 다룰 수 있다.
 
 ## 4. 의사결정 트리의 단점은?
 
-   - 각 노드에서의 최적값을 찾아내는 탐욕 알고리즘같은 휴리스틱 기법을 기반으로 하고 있어 최적 결정 트리를 알아낸다고 보장할 수 없다. (local maximum에 갇히는 문제)
-
+   - 각 노드에서의 최적값을 찾아내는 탐욕 알고리즘같은 휴리스틱 기법을 기반으로 하고 있어 최적 결정 트리를 알아낸다고 보장할 수 없다. (local maximum에 갇히는 문제 그래서 unstable하다.)
    - 훈련 데이터를 제대로 일반화하지 못할 경우 너무 복잡한 결정 트리를 만들 수 있다.
-
    - 배타적 논리합이나 패리티, 멀티 플렉서와 같은 문제를 학습하기 어렵다.
-
    - 약간의 차이에 따라 트리의 모양이 많이 달라질 수 있다.
+   - limited to one target attribute 한 개의 속성만 target으로 정할 수 있다.
 
 
 ## 5. 표현방법
@@ -46,7 +41,7 @@
    - each leaf node는 classification value을 적는다.
 
    아래 예시는 'outlook' 속성이 있고 이 속성의 value 값으로 sunny, overcast, rain이 있고 리프 노드의 값은 날씨에 따라 테니스를 치러 나갈것인가 YES, 안 나갈것인가를 NO정하는 classification value 이다.
-   
+
    <img src="./image/1.png" width="60%">
 
    ```c
@@ -61,7 +56,7 @@
 
 ## 6. decision tree types
    - binary decision trees - only two choices in each split (성적 예시)
-   <img src="./image/2.png" width="60%">
+      <img src="./image/2.png" width="60%">
    
    - N-way or ternary decision trees - three or more choices in at least one of its split (테니스 예시)
 
@@ -122,22 +117,23 @@
 ## 11. information gain: Example
 
    - data set
-   <img src="./image/6.png" width="80%">
+      <img src="./image/6.png" width="80%">
+
       target variable인 Transportation의 엔트로피 값은 **1.571**
-      
+
    <img src="./image/7.png" width="60%">
    - 만약, Gender로 split을 할 경우 Target인 버스, 전철, 차고 각각 분류해서 
      
       남성5명 (버스3 + 전철1 + 차1)의 Entropy를 구해 1.37
-     
+     ​     
       여성5명 (버스1 + 전철2 + 차2)의 Entropy를 구해 1.522
 
    Information gain 식에 대입하면 
-   
-   
+
+
    <img src="./image/9.png" width="60%">
-   
-   
+
+
    <img src="./image/8.png" width="60%">
 
    - 만약, Car ownership으로 split하면 Gain이 0.534
@@ -147,31 +143,32 @@
    - 만약, Income Level로 split하면 Gain이 0.695
 
    - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
-   
-   
+
+
    <img src="./image/10.png" width="60%">
 
    근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
 
    분류된 부분은 제거하고 계산이 필요한 부분만 남겨서 다시 Target Variable의 Entropy(S)를 새로 구하고 똑같이 계산해준다. 
-      <img src="./image/11.png" width="60%">
-      <img src="./image/12.png" width="60%">
+​      <img src="./image/11.png" width="60%">
+​      <img src="./image/12.png" width="60%">
 
   - Entropy(S) =**0.722**
-  
-  
+
+
      <img src="./image/13.png" width="60%">
-
+    
      - Gender의 Gain =**0.322**
-
+    
      - Car ownership = 0.171
-
+    
      - Income level = 0.171
-
+    
      - 가장 높은 Gender가 다음 속성 node으로 선정되고 또 나눈다. Target Variable인
         Transportation이 pure하게 딱 떨어질 때까지 반복한다. 
-        
-        
+
+
+​        
 <img src="./image/14.png" width="60%">
 
 
@@ -179,10 +176,17 @@
 
 
 <img src="./image/16.png" width="60%">
-     - 3회차 반복
-     
+​     - 3회차 반복
+​     
 <img src="./image/17.png" width="60%"> 
 
 <img src="./image/18.png" width="60%">
 
  *fin*
+
+
+
+## 12. Gini purity 계산법
+
+- 비슷한 개념인데 계산법이 좀 더 단순하다.
+- 간단한 예시로 주머니에 흰 공이 10개, 검은 공이 10개 있다고 하자. 그럼 Gini값은 0.5이다.
