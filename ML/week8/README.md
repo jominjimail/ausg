@@ -1,6 +1,6 @@
 ## Decision tree ##
 
-1. 의사결정 트리란?
+## 1. 의사결정 트리란?
 
    - 결정트리는 의사 결정 규칙과 그 결과들을 트리 구조로 도식화한 의사 결정 지원 도구의 일종이다. 목표에 가장 가까운 결과를 낼 수 있는 전략을 찾기 위해 주로 사용된다.
 
@@ -9,14 +9,14 @@
    - eager learning과 관련있다. 미리 분류해놓은 tree를 가지로 query가 들어오면 tree를 거쳐 답을 내준다.
 
 
-2. 의사결정 트리 알고리즘이란?
+## 2. 의사결정 트리 알고리즘이란?
 
    - 결정 트리를 구성하는 알고리즘에는 주로 하향식 기법이 사용되며, 각 진행 단계에서는 주어진 데이터 집합을 가장 적합한 기준으로 분할하는 변수값이 선택된다. 
 
    - 서로 다른 알고리즘들은 '분할의 적합성'을 측정하는 각자의 기준이 있다.(ex.동질성 측정)
 
 
-3.  의사결정 트리의 장점은?
+## 3.  의사결정 트리의 장점은?
 
    - 계산 비용이 적다.
 
@@ -28,7 +28,7 @@
 
    - 대규모의 데이터 셋에서도 잘 동작한다. 특히 속성이 많은 data를 유연하게 다룰 수 있다.
 
-4. 의사결정 트리의 단점은?
+## 4. 의사결정 트리의 단점은?
 
    - 각 노드에서의 최적값을 찾아내는 탐욕 알고리즘같은 휴리스틱 기법을 기반으로 하고 있어 최적 결정 트리를 알아낸다고 보장할 수 없다. (local maximum에 갇히는 문제)
 
@@ -39,7 +39,7 @@
    - 약간의 차이에 따라 트리의 모양이 많이 달라질 수 있다.
 
 
-5. 표현방법
+## 5. 표현방법
 
    - internal node는 attribute variable을 적는다.
    - each branch는 attribute value을 적는다.
@@ -57,11 +57,11 @@
 
 
 
-6. decision tree types
+## 6. decision tree types
    - binary decision trees - only two choices in each split (성적 예시)
    - N-way or ternary decision trees - three or more choices in at least one of its split (테니스 예시)
 
-7. tree split
+## 7. tree split
 
    트리는 split 과정을 통해 좀 더 작은 자식을 생성한다. 하지만 잘 생각해보자 split을 그냥 멍청하게 자를것인가?
 
@@ -69,7 +69,7 @@
 
    *이제는 정보력이 높은 속성을 어떻게 detect를 하느냐가 문제인 것이다.* 
 
-8. tree split 똑똑하게 하기
+## 8. tree split 똑똑하게 하기
 
    - best split을 하기 위해 각 속성으로 분류했을때 나오는 자식들의 homogeneous 속성을 평가하면 된다. 즉, 동족성이다. 이 속성을 purity 순도라고 한다. 
 
@@ -83,7 +83,7 @@
 
    - *purity를 increase 하는 방향으로 split을 한다면 이것은 best split방법이 될 것이다.*
 
-9. 순도를 어떻게 측정 할 것인가?
+## 9. 순도를 어떻게 측정 할 것인가?
 
    - **information gain based on entropy** 개념을 다룰 것이다.
 
@@ -93,7 +93,7 @@
 
    - Chi-square Test based(on chi-square distribution in Statistics)
 
-10. Information Gain이란?
+## 10. Information Gain이란?
 
     - Entropy란?
 
@@ -115,7 +115,7 @@
 
       split을 함으로써 부모와 자식의 불순도가 얼마나 차이나는지 비교하기 위해서 고안한 식이다.
 
-11. information gain: Example
+## 11. information gain: Example
 
     - data set
 
