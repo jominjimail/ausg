@@ -111,19 +111,19 @@
       >
       > 즉, 확률이 높을 수록 에너지가 낮고, 로또에 당첨되는 것처럼 확률이 낮으면 에너지가 굉장히 높다.
 
-    - information gain이란?
+   - information gain이란?
 
       split을 함으로써 부모와 자식의 불순도가 얼마나 차이나는지 비교하기 위해서 고안한 식이다.
 
 ## 11. information gain: Example
 
-    - data set
+   - data set
 
 
 
       target variable인 Transportation의 엔트로피 값은 **1.571**
 
-    - 만약, Gender로 split을 할 경우
+   - 만약, Gender로 split을 할 경우
 
       Target인 버스, 전철, 차고 각각 분류해서 
 
@@ -133,25 +133,25 @@
 
       Information gain 식에 대입하면 
 
-    - 만약, Car ownership으로 split하면 Gain이 0.534
+   - 만약, Car ownership으로 split하면 Gain이 0.534
 
-    - 만약, Travel Cost로 split하면 Gain이 **1.210**
+   - 만약, Travel Cost로 split하면 Gain이 **1.210**
 
-    - 만약, Income Level로 split하면 Gain이 0.695
+   - 만약, Income Level로 split하면 Gain이 0.695
 
-    - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
+   - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
 
       근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
 
       분류된 부분은 제거하고 계산이 필요한 부분만 남겨서 다시 Target Variable의 Entropy(S)를 새로 구하고 똑같이 계산해준다. 
 
-      - Entropy(S) =**0.722**
+     - Entropy(S) =**0.722**
 
-      - Gender의 Gain =**0.322**
+     - Gender의 Gain =**0.322**
 
-      - Car ownership = 0.171
+     - Car ownership = 0.171
 
-      - Income level = 0.171
+     - Income level = 0.171
 
-      - 가장 높은 Gender가 다음 속성 node으로 선정되고 또 나눈다. Target Variable인
+     - 가장 높은 Gender가 다음 속성 node으로 선정되고 또 나눈다. Target Variable인
         Transportation이 pure하게 딱 떨어질 때까지 반복한다. 
