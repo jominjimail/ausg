@@ -147,13 +147,13 @@
    - 즉, Gain이 가장 높은 1.210이 채택되면서 root는 Travel Cost가 된다. 
    <img src="./image/10.png" width="60%">
 
-      근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
+   근데 아마 Expensive와 Standard는 깔끔하게 pure하게 나오는데 cheap부분이 딱 떨어지지 않을 거다. 그럼 또 반복한다.
 
-      분류된 부분은 제거하고 계산이 필요한 부분만 남겨서 다시 Target Variable의 Entropy(S)를 새로 구하고 똑같이 계산해준다. 
+   분류된 부분은 제거하고 계산이 필요한 부분만 남겨서 다시 Target Variable의 Entropy(S)를 새로 구하고 똑같이 계산해준다. 
       <img src="./image/11.png" width="60%">
       <img src="./image/12.png" width="60%">
 
-     - Entropy(S) =**0.722**
+  - Entropy(S) =**0.722**
      <img src="./image/13.png" width="60%">
 
      - Gender의 Gain =**0.322**
