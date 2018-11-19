@@ -190,6 +190,6 @@
 
 - 비슷한 개념인데 계산법이 좀 더 단순하다.
 - 간단한 예시로 주머니에 흰 공이 10개, 검은 공이 10개 있다고 하자. 그럼 Gini값은 0.5이다.
- <img src="./image/19.png" width="60%">
+ <img src="./image/19.png" width="30%">
  <img src="./image/20.png" width="60%">
  <img src="./image/21.png" width="60%">
