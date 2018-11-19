@@ -126,7 +126,9 @@
    <img src="./image/7.png" width="60%">
    - 만약, Gender로 split을 할 경우
      Target인 버스, 전철, 차고 각각 분류해서 
+     
      남성5명 (버스3 + 전철1 + 차1)의 Entropy를 구해 1.37
+     
      여성5명 (버스1 + 전철2 + 차2)의 Entropy를 구해 1.522
 
    Information gain 식에 대입하면 
