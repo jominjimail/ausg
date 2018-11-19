@@ -95,7 +95,7 @@
 
 ## 10. Information Gain이란?
 
-    - Entropy란?
+   - Entropy란?
 
       impurity를 측정하는 단위이다.
 
