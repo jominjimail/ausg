@@ -48,7 +48,7 @@
 
 ## AWS 기초 개념
 
-1. **Region**  지역이란?
+### 1. **Region**  지역이란?
 <img src="./image/24.png" width="100%"> 
 
 <img src="./image/25.png" width="80%"> 
@@ -57,7 +57,7 @@
 
    [전세계 아마존 컴퓨터 속도 확인 해보기](http://www.cloudping.info)
 
-2. **availability zone** 가용영역 이란?
+### 2. **availability zone** 가용영역 이란?
    
 <img src="./image/23.png" width="80%"> 
    각 Region마다 건물이 한 개라고 하자 자연재해로 인해 건물이 부셔져서 cloud 데이터가 망가졌다. 이런 불상사를 막기 위해 백업을 해준다. az1, az2 같이 여러 건물을 두고 이 건물 사이에는 인터넷 보다 더 빠른 전용선으로 직접 연결되어 있다. 데이터를 굉장히 빠르게 주고 받아서 마치 az1과 az2가 같은 데이터를 
