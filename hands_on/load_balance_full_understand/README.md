@@ -25,5 +25,5 @@
 4. Amazon Simple Storage Service(**S3**)
    - 온라인 스토리지 서비스입니다. 
 
-[AWS 기초 개념]
-[EC2]
+STEP 1. [AWS 기초 개념]
+STEP 2. [EC2]
