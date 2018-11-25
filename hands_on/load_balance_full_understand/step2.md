@@ -130,7 +130,7 @@
 
 <img src="./image/6.png" width="100%"> 
 
-> 주의할 점: image를 만드는 동안은 해당 instance가 일시정지된다. 일시적으로 web application이 동작하지 않는다. 하지만 서버이기에 반드시 알고 있어야 한다. 
+> 주의할 점: image를 만드는 동안은 해당 instance가 일시정지된다. 일시적으로 web application이 동작하지 않는다. 서버이기에 반드시 알고 있어야 한다. 
 
 #### AMI 로 instance 만들어 보기
 
@@ -169,6 +169,7 @@
 <img src="./image/10.png" width="70%"> 
 
 8. 기존 IP로 (18.179.174.191) 접속이 불가능합니다.
+<img src="./image/11.png" width="70%"> 
 
 왜 이렇게 만들었을까요? ip의 고갈 문제때문에 이런 설정이 해줬습니다. 
 
