@@ -3,7 +3,7 @@
 
 :Amazon Web Service 는 아마존에서 제공하는 클라우드 서비스
 
-
+<img src="./image/26.png" width="80%"> 
 
 ## 클라우드 컴퓨팅이란?
 
