@@ -26,4 +26,6 @@
    - 온라인 스토리지 서비스입니다. 
 
 STEP 1. [AWS 기초 개념](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step1.md)
+
+
 STEP 2. [EC2]()
