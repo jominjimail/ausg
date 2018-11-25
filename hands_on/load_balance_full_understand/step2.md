@@ -90,15 +90,19 @@
   - 이중 **IPv4 Public IP or Public DNS(IPv4)** 를 복사해서 새창에 띄워보자
   - 아래와 같은 화면이 나오면 설치가 잘 된것이다.
   <img src="./image/1.png" width="60%"> 
+  
   - 해당 페이지는 /var/www/html 에 있는 index.html파일이다. 
   - 이파일을 지우면 $sudo rm index.html
   - 재 접속시 파일이 없기때문에 아래와 같은에러페이지가 뜬다.
-  <img src="./image/2.png" width="60%"> 
+  <img src="./image/2.png" width="60%">
+  
   - $sudo nano index.html 
   <img src="./image/3.png" width="60%"> 
+  
   - 새로운 파일을 생성해주고 저장 후, 나온다.
   - 재 접속을 시도하면 아래와 같은 페이지가 뜬다.
   <img src="./image/4.png" width="60%"> 
+  
 
 ## AMIs
 
