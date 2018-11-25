@@ -14,7 +14,7 @@
 3. 2번째란에 있는 **Activate MFA on your root accut** 를 클릭한다.
 4. **Manage MFA** 를 클릭한다.
 5. **Activate MFA** 를 클릭한다.
-6. 디폴트인 **Virtual MFA device** 가 체크되었는지 확인하고 **Comtinue ** 를 클릭한다.
+6. 디폴트인 **Virtual MFA device** 가 체크되었는지 확인하고 **Continue** 를 클릭한다.
 7. 아이폰, 안드로이드 모두 호환된다. App store 에서 **Google Authenticator** 앱을 다운로드한다.
 8. 앱을 실행하고 **설정 시작하기** 를 클릭한다.
 9. **바코드 스캔** 을 클릭후 QR 코드를 스캔해준다. 
