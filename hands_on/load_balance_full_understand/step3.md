@@ -18,7 +18,13 @@ clinet가 한 두명인 경우 시스템은 아래와 같이 동작한다.
 
 <img src="./image/35.png" width="50%"> 
 
+
+
 하지만, clinet가 수천만명이라면? server는 모든 사람들의 응답을 해주려고 노력하지만 결국엔 파업을 한다. 멈춰버린다.
+
+<img src="./image/34.png" width="60%">
+
+
 
 
 
@@ -31,7 +37,7 @@ scale-up은 금전적, 기술적 한계가 있다.
 
 
 
-*하지만, AWS에서는 클릭 몇번으로 scale-up이 가능하다. 이 과정을 실습하다 과금이 나온바람에 실습에서는 제외했다...[궁금하신 분들을 위한 SCALE-UP링크](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-instance-resize.html)*
+*하지만, AWS에서는 클릭 몇번으로 scale-up이 가능하다. 이 과정을 실습하다 과금이 나온바람에 실습에서는 제외했다. [궁금하신 분들을 위한 SCALE-UP링크](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/ec2-instance-resize.html)*
 
 
 
@@ -42,7 +48,7 @@ scale-up은 금전적, 기술적 한계가 있다.
 
 즉, 하나의 인터넷 서비스가 발생하는 트래픽이 많을 때 여러 대의 서버가 분산처리하여 서버의 로드율 증가, 부하량, 속도저하 등을 고려하여 적절히 분산처리하여 해결해주는 서비스 입니다.
 
-
+<img src="./image/36.png" width="80%">
 
 
 
