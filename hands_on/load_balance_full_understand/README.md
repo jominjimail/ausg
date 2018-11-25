@@ -26,6 +26,22 @@
    - 온라인 스토리지 서비스입니다. 
 
 
+
+### AWS 무료 서비스 - Free Tier
+
+- AWS는 처음 가입 후 12개월 동안 주요 서비스에 대한 무료 서비스를 제공합니다.
+
+- 주요 서비스에 대해 기본적인 테스트와 블로그 같은 작은 서비스 운영이 가능합니다.
+
+  - EC2 서버: 원 750시간 t2.micro 운영 가능 
+  - S3 스토리지: 5GB (다운로드 2만회, 업로드 2천회)
+
+- 여러분이 사용 중 프리 티어를 초과하지 않으면 이용 요금이 부과되지 않습니다.
+
+- 해당 세미나는 프리 티어를 초과하지 않습니다.
+
+
+
 STEP 1. [AWS 기초 개념](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step1.md)
 
 
