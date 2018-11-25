@@ -89,19 +89,19 @@
   - 해당 instance를 클릭하면 아래 부분에 **Description** 항목을 볼 수 있다. 
   - 이중 **IPv4 Public IP or Public DNS(IPv4)** 를 복사해서 새창에 띄워보자
   - 아래와 같은 화면이 나오면 설치가 잘 된것이다.
-  <img src="./image/1.png" width="80%"> 
+  <img src="./image/1.png" width="100%"> 
   
   - 해당 페이지는 /var/www/html 에 있는 index.html파일이다. 
   - 이파일을 지우면 $sudo rm index.html
   - 재 접속시 파일이 없기때문에 아래와 같은에러페이지가 뜬다.
-  <img src="./image/2.png" width="80%">
+  <img src="./image/2.png" width="100%">
   
   - $sudo nano index.html 
-  <img src="./image/3.png" width="80%"> 
+  <img src="./image/3.png" width="100%"> 
   
   - 새로운 파일을 생성해주고 저장 후, 나온다.
   - 재 접속을 시도하면 아래와 같은 페이지가 뜬다.
-  <img src="./image/4.png" width="80%"> 
+  <img src="./image/4.png" width="100%"> 
   
 
 ## AMIs
@@ -157,19 +157,64 @@
 
 이를 이해하기 위해 상황을 가정해봅시다.
 
-1. webserver의 IPv4 Public IP는 18.179.174.191입니다. (제 컴퓨터 기준)
-<img src="./image/9.png" width="70%"> 
+
+
+#### 상황 가정하기
+
+1. webserver의 IPv4 Public IP는 54.238.241.74입니다. (제 컴퓨터 기준)
+<img src="./image/9.png" width="100%"> 
 
 2. 해당 instance에서 오른쪽 클릭
 3. **Instance State** 클릭
 4. **Stop** 클릭 (stop을 하는 순간 요금이 발생하지 않습니다. 말그대로 stop하는겁니다.)
 5. **stopping >> stopped** 을 확인하고
 6. 다시 >instance 오른쪽 클릭 > Instance State 클릭 >  **Start** 클릭
-7. 앗, webserver의 IPv4 Public IP가 52.68.103.64로 변경되었습니다.
-<img src="./image/10.png" width="70%"> 
+7. 앗, webserver의 IPv4 Public IP가 18.179.61.240로 변경되었습니다.
+<img src="./image/10.png" width="100%"> 
 
-8. 기존 IP로 (18.179.174.191) 접속이 불가능합니다.
-<img src="./image/11.png" width="70%"> 
+8. 더이상 기존 IP로 (18.179.174.191) 접속이 불가능합니다.
+<img src="./image/11.png" width="100%"> 
 
-왜 이렇게 만들었을까요? ip의 고갈 문제때문에 이런 설정이 해줬습니다. 
+
+
+왜 이렇게 만들었을까요? 서버의 경우 ip가 계속 변하면 사용자들이 엄청 불편한데 말이죠.
+
+- ip의 고갈 문제때문에 이런 설정이 해줬습니다. 
+- 그럼 계속 ip가 바꿔나요? 고정안되나요?
+- 고정 ip를 원한다면, Elastic IP 서비스를 사용하면 됩니다.
+
+
+
+#### Elastic IP 할당받기
+
+<img src="./image/12.png" width="100%">
+
+- **Elastic IPs** 클릭
+- **Allocate new address** 클릭
+- **Allocate**클릭
+- **Close**클릭
+- 저는 18.182.22.89 ip를 할당 받았습니다.
+
+<img src="./image/13.png" width="100%">
+
+- 해당 elastic ip에 오른쪽 클릭
+- **Associate address** 클릭
+- **Instance** 란에 webserver 선택해주기
+- **Associate**클릭
+- **Close**클릭
+
+<img src="./image/16.png" width="100%">
+
+- webserver 인스턴스의 **Description**을 보면 **Elastic IPs** 가 추가되있는걸 확인할 수 있습니다.
+
+<img src="./image/33.png" width="100%">
+
+- '상황 가정하기'부분을 다시 해봅니다.
+- 이제는 ip가 변하지 않습니다. 
+
+
+
+> 주의 : 해당 서비스는 유로 서비스입니다. 하지만, 한 개의 Elastic ip를 할당받아 한 개의 instacne에 연결하는거 까지만 무료 입니다. 즉, 위 실습은 무료 입니다.
+
+<img src="./image/14.png" width="80%">
 
