@@ -16,7 +16,7 @@ ELB는 3 가지 유형의 로드 밸런서를 지원합니다.
 
 clinet가 한 두명인 경우 시스템은 아래와 같이 동작한다.
 
-<img src="./image/35.png" width="50%"> 
+<img src="./image/35.png" width="60%"> 
 
 
 
