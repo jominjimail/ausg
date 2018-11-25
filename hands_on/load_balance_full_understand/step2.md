@@ -112,6 +112,8 @@
 
 이 부분은 AMI를 선택하는 부분이다. 
 
+<img src="./image/5.png" width="100%"> 
+
 > AMI란, 미리 만들어둔 아마존 가상 머신의 이미지입니다. AWS의 경우 EC2 인스턴스를 만들때 완전히 빈 가상 컴퓨터를 만드는 것이 아니라, 빈 가상컴퓨터에 최소한 이미 만어진 OS가 설치 되어 있는 이미지를 설치하도록 되어 있습니다.
 
 유저가 직접 만든 MY AMIS를 선택할 수도 있고, 타 유저들이 만든 AMI도 AWS Marketplace를 통해  유/무료로 구입하여 설치 할 수 있다.
@@ -126,6 +128,8 @@
 6. **Create Image** 클릭
 7. **IMAGES > AMIs** 에서 **avaliable**을 확인할 수 있다.
 
+<img src="./image/6.png" width="100%"> 
+
 > 주의할 점: image를 만드는 동안은 해당 instance가 일시정지된다. 일시적으로 web application이 동작하지 않는다. 하지만 서버이기에 반드시 알고 있어야 한다. 
 
 #### AMI 로 instance 만들어 보기
@@ -135,13 +139,13 @@
 3. 이 후는 (EC2 생성해보기)와 동일한 과정을 거친다.
 4. 다만, (*Step6* 방화벽과 같은 역할을 하는 부분이다.) 과정에서  **Select an existing security group** 을 선택해 기존에 만들었던 보안그룹을 사용한다. (꼭 안그래도 된다. 하지만 이번 핸즈온에서는 기존의 그룹을 선택해주세요.)
 
-
+<img src="./image/7.png" width="100%"> 
 
 여기까지의 상태
 
 2개의 동일한 instance가 생성되었다.
 
-
+<img src="./image/8.png" width="100%"> 
 
 ### Elastic IPs란?
 
@@ -154,12 +158,16 @@
 이를 이해하기 위해 상황을 가정해봅시다.
 
 1. webserver의 IPv4 Public IP는 18.179.174.191입니다. (제 컴퓨터 기준)
+<img src="./image/9.png" width="70%"> 
+
 2. 해당 instance에서 오른쪽 클릭
 3. **Instance State** 클릭
 4. **Stop** 클릭 (stop을 하는 순간 요금이 발생하지 않습니다. 말그대로 stop하는겁니다.)
 5. **stopping >> stopped** 을 확인하고
 6. 다시 >instance 오른쪽 클릭 > Instance State 클릭 >  **Start** 클릭
 7. 앗, webserver의 IPv4 Public IP가 52.68.103.64로 변경되었습니다.
+<img src="./image/10.png" width="70%"> 
+
 8. 기존 IP로 (18.179.174.191) 접속이 불가능합니다.
 
 왜 이렇게 만들었을까요? ip의 고갈 문제때문에 이런 설정이 해줬습니다. 
