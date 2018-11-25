@@ -9,7 +9,7 @@
 
 1. AWS services 검색란에 **IAM** 이라고 검색한다. 
 2. Security Status는 현재 보안 상태를 나태내준다.
-3. 2번째란에 있는 **Activate MFA on your root accut ** 를 클릭한다.
+3. 2번째란에 있는 **Activate MFA on your root accut** 를 클릭한다.
 4. **Manage MFA** 를 클릭한다.
 5. **Activate MFA** 를 클릭한다.
 6. 디폴트인 **Virtual MFA device** 가 체크되었는지 확인하고 **Comtinue ** 를 클릭한다.
