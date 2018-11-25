@@ -64,4 +64,6 @@
 
    > 같은 지역 (ex. Tokyo)에 있는 az_tokyo1 과 az_tokyo2는 데이터를 주고 받을 수 있지만 다른 지역끼리(ex. Tokyo 와 Oregon)는 데이터를 주고 받을 수 없다. 불가능한건 아니지만, 인터넷을 통해 *느리게* 전달 받을 수 있다.
    
-  [더더 자세한 도큐먼트](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+  [더더 자세한 REGIONG도큐먼트](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+  
+  [STEP2]()
