@@ -1,4 +1,4 @@
-
+<img src="./image/28.jpg" width="20%"> 
 
 
 ## EC2 생성해보기
