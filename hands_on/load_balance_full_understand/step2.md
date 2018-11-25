@@ -218,4 +218,3 @@
 
 <img src="./image/14.png" width="80%">
 
-[Elastic IPs 더더 자세한 정보](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
