@@ -17,7 +17,7 @@
 
 1. Amazon Elastic Compute Cloud(**EC2**)
    - 가상 서버 자원을 제공하는 서비스, 이때 하나의 가상 서버 자원은 인스턴스(instance)로 분류되며, AMI(Amazon Machine Image)라고 부릅니다.
-<img src="./image/26.png" width="80%"> 
+<img src="./image/28.jpg" width="80%"> 
 
 2.  AWS Elastic Load Balancing(**ELB**)
    - 트래픽 로드 밸런싱 서비스, EC2의 앞에 위치 시키고 여러개의 EC2 인스턴스에 대해 트래픽을 분산해 줍니다.
