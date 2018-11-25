@@ -17,19 +17,19 @@
 
 1. Amazon Elastic Compute Cloud(**EC2**)
    - 가상 서버 자원을 제공하는 서비스, 이때 하나의 가상 서버 자원은 인스턴스(instance)로 분류되며, AMI(Amazon Machine Image)라고 부릅니다.
-<img src="./image/28.jpg" width="30%"> 
+<img src="./image/28.jpg" width="20%"> 
 
 2.  AWS Elastic Load Balancing(**ELB**)
    - 트래픽 로드 밸런싱 서비스, EC2의 앞에 위치 시키고 여러개의 EC2 인스턴스에 대해 트래픽을 분산해 줍니다.
-<img src="./image/29.png" width="30%"> 
+<img src="./image/29.png" width="20%"> 
 
 3. Auto Scaling(**ASG**)
    - CPU 또는 메모리 등의 사용량에 따라 EC2 인스턴스의 개수를 자동으로 증설/축소 하는 서비스입니다. 
-<img src="./image/30.png" width="30%"> 
+<img src="./image/30.png" width="20%"> 
 
 4. Amazon Simple Storage Service(**S3**)
    - 온라인 스토리지 서비스입니다. 
-<img src="./image/31.png" width="30%"> 
+<img src="./image/31.png" width="20%"> 
 
 
 
