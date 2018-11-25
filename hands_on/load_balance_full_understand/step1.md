@@ -8,7 +8,7 @@
 *저희는 MFA를 이용해서 2중 보안을 설정해줄 것입니다.
 
 1. AWS services 검색란에 **IAM** 이라고 검색한다. 
-2. Security Status는 현재 보안 상태를 나태내준다.
+2. Security Status는 현재 보안 상태를 나태내준다. (여러분은 2번째가 초록색이 아닐것입니다.)
 <img src="./image/18.png" width="100%">
 
 3. 2번째란에 있는 **Activate MFA on your root accut** 를 클릭한다.
