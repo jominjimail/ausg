@@ -66,4 +66,4 @@
    
   [더더 자세한 REGIONG도큐먼트](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
   
-  [STEP2]()
+  [STEP2](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step2.md)
