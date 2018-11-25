@@ -9,6 +9,7 @@
 
 1. AWS services 검색란에 **IAM** 이라고 검색한다. 
 2. Security Status는 현재 보안 상태를 나태내준다.
+<img src="./image/18.png" width="100%">
 3. 2번째란에 있는 **Activate MFA on your root accut** 를 클릭한다.
 4. **Manage MFA** 를 클릭한다.
 5. **Activate MFA** 를 클릭한다.
