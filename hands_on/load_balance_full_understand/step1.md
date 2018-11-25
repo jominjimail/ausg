@@ -59,3 +59,5 @@
    각 Region마다 건물이 한 개라고 하자 자연재해로 인해 건물이 부셔져서 cloud 데이터가 망가졌다. 이런 불상사를 막기 위해 백업을 해준다. az1, az2 같이 여러 건물을 두고 이 건물 사이에는 인터넷 보다 더 빠른 전용선으로 직접 연결되어 있다. 데이터를 굉장히 빠르게 주고 받아서 마치 az1과 az2가 같은 데이터를 
 
    > 같은 지역 (ex. Tokyo)에 있는 az_tokyo1 과 az_tokyo2는 데이터를 주고 받을 수 있지만 다른 지역끼리(ex. Tokyo 와 Oregon)는 데이터를 주고 받을 수 없다. 불가능한건 아니지만, 인터넷을 통해 *느리게* 전달 받을 수 있다.
+   
+  [더더 자세한 도큐먼트](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
