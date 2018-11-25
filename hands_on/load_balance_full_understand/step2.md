@@ -15,6 +15,8 @@
 
 4. **Launch Instance** 를 클릭한다.
 
+<img src="./image/32.jpg" width="100%"> 
+
    *Step1* 스크롤을 내려 **Ubuntu Server 18.04 LTS(HVM)..** 을 **Select** 해준다
 
    *Step2*  Free tier eligible 표시된것만 무료로 제공하고 이것 외 나머지는 클릭하는 순간부터 과금이 발생한다. **t2.micro** 는 1개의 cpu와 1GB의 메모리를 가지고 있다. **Next: Configure Instance..** 을 클릭한다.
