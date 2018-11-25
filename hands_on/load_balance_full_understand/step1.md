@@ -29,7 +29,11 @@
 ## 결제 알림 받기
 
 혹시 여러분이 어떤 이유로 과금이 발생된 경우, 바로 조치를 취하기 위해서 반드시 결제 알림을 미리 설정해 두시기 바랍니다. 
-<img src="./image/22.png" width="50%"> 
+1. MY Account로 들어가
+2. Preferences를 클릭합니다.
+3. Receive Free Tier Usage Alerts가 체크되어있는지 확인합니다.
+
+<img src="./image/22.png" width="20%"> 
 <img src="./image/19.png" width="100%"> 
 
 하지만, 메일을 잘 확인 안하는 저는 그만...
