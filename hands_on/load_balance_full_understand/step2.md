@@ -218,3 +218,4 @@
 
 <img src="./image/14.png" width="80%">
 
+[STEP 3](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step3.md)
