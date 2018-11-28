@@ -1,8 +1,8 @@
-### CLI 으로 S3 파일 업로드 다운로드
+## CLI 으로 S3 파일 업로드 다운로드
 
 
 
-#### AWS CLI란?
+## AWS CLI란?
 
 CLI(Command LIne Interface)는 AWS 서비스를 관리할 수 있는 통합 도구이다.
 
@@ -10,7 +10,7 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
 
 하지만 보통 사용자들은 CLI보다는 화면상에서 버튼을 클릭하거나 드래그&드롭 할 수 있는 GUI(Graphic User Interface)에 익숙해져 있어서 어려워 보이지만 익숙해지면 나름 괜찮다. CLI를 미워하지 말자. 
 
-#### AWS cli 설치
+## AWS cli 설치
 
 1. ubuntu instance를 하나 생성한다. (security grop은 web을 선택해줬다. 새로 생성해도 무관)
 
@@ -58,7 +58,7 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
 
 
 
-#### IAM 유저 생성
+## IAM 유저 생성
 
 - 설치 완료 후 바로 사용할 수 있으면 좋겠지만, 중요한 과정인 계정 access key 셋팅+ 기타 설정 과정을 완료해야 cli를 사용할 수 있습니다. access key를 만들기 위해 IAM 유저를 생성해봅시다.
 
@@ -94,7 +94,7 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
 
 
 
-#### user1 으로 s3에 접속하기
+## user1 으로 s3에 접속하기
 
 - terminal 임, 다운로드한 .csv 파일 참고하기
 
@@ -160,3 +160,4 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
   <img src="./image/89.png" width="100%"> 
 
 
+*fin*
