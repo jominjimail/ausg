@@ -59,5 +59,5 @@ STEP 2. [EC2](https://github.com/jominjimail/ausg/blob/master/hands_on/load_bala
 STEP 3. [ELB]()
 
 
-STEP 4. [CLImode_S3]()
+STEP 4. [CLImode_S3](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step4.md)
 
