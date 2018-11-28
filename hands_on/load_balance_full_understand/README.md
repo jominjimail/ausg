@@ -56,7 +56,7 @@ STEP 1. [AWS 기초 개념](https://github.com/jominjimail/ausg/blob/master/hand
 STEP 2. [EC2](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step2.md)
 
 
-STEP 3. [ELB]()
+STEP 3. [ELB](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step3.md)
 
 
 STEP 4. [CLImode_S3](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step4.md)
