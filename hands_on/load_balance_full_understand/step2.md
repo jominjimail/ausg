@@ -7,6 +7,7 @@
 
 독립적인 컴퓨터를 할당해주는 서비스이다. 컴퓨터 한 대를 instance 라고 생각하면 된다.
 
+
 1. AWS services 검색란에 **EC2** 라고 검색한다. 
 
 2. 오른쪽 상단에서 Region을 **Tokyo** 로 설정해준다. 
@@ -41,7 +42,7 @@
 
 ## EC2 instance에 접속해보기
 
-1. 맥에서 접속해보기
+#### 1. 맥에서 접속해보기
 
    - 생성한 instace 에 왼쪽 클릭을 하면 **Connect** 가 나온다. 클릭한다.
 
@@ -63,7 +64,7 @@
 
    - 접속을 끊고 싶으면 $exit 을 하면 된다.
 
-2. window에서 접속해보기
+#### 2. window에서 접속해보기
 
    - window는 ssh가 내장되어 있지 않기때문에 프로그램을 따로 깔아야 한다.
    - xshell 을 설치한다. [설치링크](https://www.netsarang.co.kr/download/down_form.html?code=612) 설치는 굉장히 빨리된다.
@@ -147,7 +148,7 @@
 
 <img src="./image/8.png" width="100%"> 
 
-### Elastic IPs란?
+## Elastic IPs란?
 
   : 동적 클라우스 컴퓨팅을 위해 고안된 고정 IPv4 주소 입니다. 
 
