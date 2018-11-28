@@ -223,4 +223,4 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
    - 확실히 빠르다. Ctrl+C 가 필요없다.
 
-[STEP4]()
+[STEP4](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step4.md)
