@@ -1,4 +1,4 @@
-ELB
+## ELB
 
 :Elastic Load Balancing은 들어오는 애플리케이션 트래픽을 Amazon EC2 인스턴스, 컨테이너, IP 주소와 같은 여러 대상에 자동으로 분산시킵니다.
 
@@ -10,7 +10,7 @@ ELB는 3 가지 유형의 로드 밸런서를 지원합니다.
 
 저희는 마지막, Classic Load Balancer를 다룰것 입니다.
 
-### Load Balancer란?
+## Load Balancer란?
 
 우선, 왜 Load Balancer가 필요할까?
 
@@ -83,7 +83,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
 
 
-#### Load Balancer 만들기
+## Load Balancer 만들기
 
 
 
@@ -223,4 +223,4 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
    - 확실히 빠르다. Ctrl+C 가 필요없다.
 
-
+[STEP3]()
