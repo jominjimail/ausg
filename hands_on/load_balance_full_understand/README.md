@@ -33,7 +33,7 @@
 
 
 
-### AWS 무료 서비스 - Free Tier
+## AWS 무료 서비스 - Free Tier
 
 - AWS는 처음 가입 후 12개월 동안 주요 서비스에 대한 무료 서비스를 제공합니다.
 
@@ -52,3 +52,10 @@ STEP 1. [AWS 기초 개념](https://github.com/jominjimail/ausg/blob/master/hand
 
 
 STEP 2. [EC2](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step2.md)
+
+
+STEP 3. [ELB]()
+
+
+STEP 4. [CLImode_S3]()
+
