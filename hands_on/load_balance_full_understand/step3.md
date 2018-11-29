@@ -62,7 +62,17 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
 아래와 같은 예시도 Scalue out의 예시입니다.
 
- 
+ <img src="./image/38.png" width="80%">
+
+<img src="./image/39.png" width="80%">
+
+<img src="./image/40.png" width="80%">
+
+<img src="./image/41.png" width="80%">
+
+<img src="./image/42.png" width="80%">
+
+
 
 하지만 왜, Web server의 Scale out에는 Load Balancer 가 붙는걸까요?
 
@@ -106,6 +116,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
    <img src="./image/51.png" width="100%">
 
 3. attack 셋팅
+
    - attack $sudo apt-get install apache2-utils
 
 4. web1 셋팅
@@ -156,7 +167,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
      <img src="./image/58.png" width="100%">
 
-5. 이제, load balancer를 만들어 보자
+7. 이제, load balancer를 만들어 보자
 
    1. **Load Balancers** 클릭
 
@@ -171,6 +182,8 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
    4. name: **webserver-elb** 라고 적어주고 **Next: ..** 클릭
 
       <img src="./image/45.png" width="100%">
+
+      <img src="./image/93.png" width="70%">
 
    5. **Create a new security grop** 을 클릭하고 name: **elb** 라고 적어주고 Type **HTTP**를 선택해줍니다.
 
