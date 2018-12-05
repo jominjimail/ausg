@@ -95,6 +95,10 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
 ## Load Balancer 만들기
 
+실습 내용:
+
+우선 한개의 web1을 만들어 attack을 해봅시다. 과연 얼마나 느려지는지, 그리고 나서 web2를 만들어 Scale-out 시켜 ELB를 붙여 다시 attack 해봅시다. 이 둘의 차이는 얼마나 날까요?
+
 
 
 1. Ubuntu instance를 2개 만듭니다. (attack, web1)
@@ -151,7 +155,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
    - attack $**Ctrl+C**  // 너무 오래 걸리면 이렇게
 
-     > 분석: Time per request를 확인하면 각각 94.374 / 900.764 / 5168.919 ms 가 걸린다. 5000 ms 는 5초이다. 
+     > 분석: Time per request를 확인하면 각각 62.184 /606.798 / 3053.906 ms 가 걸린다. 3000 ms 는 3초이다. 웹페이지를 띄우는데 3초 이상이 걸리면 사용자는 불편함을 느낀다. 
 
 4. web2 를 만들어보자 
 
@@ -188,6 +192,8 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
    5. **Create a new security grop** 을 클릭하고 name: **elb** 라고 적어주고 Type **HTTP**를 선택해줍니다.
 
       <img src="./image/46.png" width="100%">
+
+      *step4. Configure Health Check는 밑에서 다룰것입니다.*
 
    6. 완성
 
@@ -235,5 +241,26 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
      <img src="./image/65.png" width="100%">
 
    - 확실히 빠르다. Ctrl+C 가 필요없다.
+
+   > 분석: Time per request를 확인하면 각각 69.271 /303.576 / 1521.300 ms 가 걸린다. 
+
+|               | ELB 전             | ELB 후   |
+| ------------- | ------------------ | -------- |
+| -n 100 -c 1   | 62.184  / 3053.906 | 69.271   |
+| -n 1000 -c 10 | 606.798            | 303.576  |
+| -n 1000 -c 50 | 3053.906           | 1521.300 |
+
+절반이나 줄었다. 
+
+이는 대단한 것이다. instance를 무한대로 늘리면 성능이 무한대로 좋아질까?
+
+생각해보자 
+
+   ## *Step4. Configure Health Checks*
+
+   이부분은 ELB에서 꽤나 중요한 부분입니다. 
+
+   여기서 정해준 규칙에 따라 Scale-out 한 instance의 건강상태를 주기적으로 체크합니다.
+
 
 [STEP4](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step4.md)
