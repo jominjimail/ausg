@@ -232,6 +232,8 @@
 > 주의 : 해당 서비스는 유로 서비스입니다. 하지만, 한 개의 Elastic ip를 할당받아 한 개의 instacne에 연결하는거 까지만 무료 입니다. 즉, 위 실습은 무료 입니다.
 
 <img src="./image/14.png" width="80%">
+
 [elastic IP 요금](https://aws.amazon.com/ko/premiumsupport/knowledge-center/elastic-ip-charges/)
+
 
 [STEP 3](https://github.com/jominjimail/ausg/blob/master/hands_on/load_balance_full_understand/step3.md)
