@@ -78,9 +78,11 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
 > 오 눈치가 빠르시군요. 굉장히 좋은 질문입니다. 
 >
-> 예를 들어보겠습니다. www.naver.com을 입력하면 즉, 도메인 주소를 입력하면 컴퓨터는 알아서 ip로 바꿔서 해당 서버에 접속합니다.  
+> 예를 들어보겠습니다. www.naver.com을 입력하면 
 >
-> Scalue-out을 통해 Web server을 2대로 만들어 clinet를 분산시켰다면 아래와 같은 그림이 나오겠죠? User1이 접속하면 Computer 8의 ip를 알려주고, User2가 접속하면 Computer 1 의 ip를 알려줍니다. 
+> 즉, 도메인 주소를 입력하면 컴퓨터는 알아서 ip로 바꿔서 해당 서버에 접속합니다.  
+>
+> Scalue-out을 통해 Web server을 2대로 만들어 clinet를 분산시켰다면 아래와 같은 그림이 나오겠죠? User1이 접속하면 Computer 6의 ip를 알려주고, User2가 접속하면 Computer 1 의 ip를 알려줍니다. 
 >
 > <img src="./image/37.png" width="80%">
 >
@@ -135,7 +137,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
      <img src="./image/52.png" width="100%">
 
-     - 저장하고 나오기
+     - 저장하고 나오기 **Ctrl+o** -> **Enter** -> **Ctrl+x**
 
 5. web1 괴롭혀보기
 
@@ -157,7 +159,7 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
      > 분석: Time per request를 확인하면 각각 62.184 /606.798 / 3053.906 ms 가 걸린다. 3000 ms 는 3초이다. 웹페이지를 띄우는데 3초 이상이 걸리면 사용자는 불편함을 느낀다. 
 
-4. web2 를 만들어보자 
+6. web2 를 만들어보자 
 
    - web1의 **Image**를 만들고 launch하자
 
@@ -173,33 +175,37 @@ Scalue out 이라는 용어는 Web server에서만 한정해서 사용하는 용
 
 7. 이제, load balancer를 만들어 보자
 
-   1. **Load Balancers** 클릭
+   load balancer는 EC2에서 제공하는 서비스중 하나입니다. 
 
-   2. **Create Load alancer** 클릭
+   1. 상단 **Service** 에서 **EC2**클릭
+
+   2. **Load Balancers** 클릭
+
+   3. **Create Load alancer** 클릭
 
       <img src="./image/43.png" width="100%">
 
-   3. 3번째 Classic Load Balancer **Create** 클릭
+   4. 3번째 Classic Load Balancer **Create** 클릭
 
       <img src="./image/44.png" width="100%">
 
-   4. name: **webserver-elb** 라고 적어주고 **Next: ..** 클릭
+   5. name: **webserver-elb** 라고 적어주고 **Next: ..** 클릭
 
       <img src="./image/45.png" width="100%">
 
       <img src="./image/93.png" width="70%">
 
-   5. **Create a new security grop** 을 클릭하고 name: **elb** 라고 적어주고 Type **HTTP**를 선택해줍니다.
+   6. **Create a new security grop** 을 클릭하고 name: **elb** 라고 적어주고 Type **HTTP**를 선택해줍니다.
 
       <img src="./image/46.png" width="100%">
 
       *step4. Configure Health Check는 밑에서 다룰것입니다.*
 
-   6. 완성
+   7. 완성
 
       <img src="./image/47.png" width="100%">
 
-6. 만들어준 load balancer 에 web1, web2 instance를 추가
+8. 만들어준 load balancer 에 web1, web2 instance를 추가
 
    1. **Instances** 클릭
 

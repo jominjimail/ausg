@@ -26,11 +26,11 @@
 
    *Step4*  **Size** 가 **8** 임을 확인하고 **Next:Add Tags** 을 클릭한다.
 
-   *Step5* 해당 instance가 어떤 역할을 하는지 누가 관리하는지를 적어놓는 곳이다. **Add Tag**를 클릭하고 Key값에 **Name**  Value값에 **Webserver** 을 적어준다. **Next: Configure Security Grop**을 클릭한다.
+   *Step5* 해당 instance가 어떤 역할을 하는지 누가 관리하는지를 적어놓는 곳이다. **Add Tag**를 클릭하고 Key값에 **Name**  Value값에 **Webserver** 을 적어준다. **Next: Configure Security Group**을 클릭한다.
 
-   *Step6* 방화벽과 같은 역할을 하는 부분이다. 해당 instance에 접근가능한 port를 명시해주는것이다. **Assign a security grop** 중 **Create a new security grop** 이 체크되있는걸 확인하고 **Security group name** 을 **web** , **Description**을 **for web**이라 적어준다.
+   *Step6* 방화벽과 같은 역할을 하는 부분이다. 해당 instance에 접근가능한 port를 명시해주는것이다. **Assign a security group** 중 **Create a new security group** 이 체크되있는걸 확인하고 **Security group name** 을 **web** , **Description**을 **for web**이라 적어준다.
 
-   우리는 web 서버를 만들것이므로 **Type**에서 **HTTP**를 클릭하고 **Source** 부분은 **Anywhere**을 추가해준다.
+   우리는 web 서버를 만들것이므로 **Add Rule** 을 클릭하고**Type**에서 **HTTP**를 클릭하고 **Source** 부분은 **Anywhere**을 추가해준다.
 
    *Step7* 최종적으로 문제가 있는지 없는지 확인을 하고 **Launch**를 클릭하면 된다.
 
@@ -39,29 +39,28 @@
 
    *Step8*  뱅글뱅글 조금만 기다리면 **instance State** 가 pending에서 running으로 바뀌고 instance생성이 완료되었다.  
 
+> 주의: pem 파일은 굉장히 중요한 파일입니다. git에 함부로 올리면 안되요. 나쁜 사람이 여러분의 instance에 접속해서 비트코인 채굴을 왕창 해버립니다. 외부에 유출되지 않도록 반드시 주의하세요.
+
 
 ## EC2 instance에 접속해보기
 
+생성한 instace 에 왼쪽 클릭을 하면 **Connect** 가 나온다. 클릭한다. **각자의 Public DNS**를 확인한다.
+
+<img src="./image/99.png" width="100%">
+
+
+
 #### 1. 맥에서 접속해보기
 
-   - 생성한 instace 에 왼쪽 클릭을 하면 **Connect** 가 나온다. 클릭한다.
-
    - terminal을 킨다.
-
-   - 다운로드 파일에 aws_pwd_pem.txt 파일이 있는지 확인한다. 이 파일은 중요한 파일이기에 따로 관리해준다. 도큐먼트에서 dev라는 폴더를 새로 만들고 그 안에 key라는 폴더를 만들어 aws_pwd_pem.txt파일을 옮겨준다. *.txt는 지워준다. 지워도 상관없다.
-
+   - 다운로드 파일에 aws_pwd_pem.txt 파일이 있는지 확인한다. *이 파일은 중요한 파일이기에 따로 관리해준다.* 도큐먼트에서 dev라는 폴더를 새로 만들고 그 안에 key라는 폴더를 만들어 aws_pwd_pem.txt파일을 옮겨준다. *.txt는 지워준다. 지워도 상관없다.
    - terminal에서 해당 파일이 있는곳으로 이동한다. $cd ....Documnets/dev/key
-
    - $sudo chmod 400 aws_pwd.pem
-
    - 파일을 보면 **-r--------@** 로 변경된걸 볼 수 있다.
-
-   - $ssh -i "aws_pwd.pem" ubuntu@ec2-18-179-174-191.ap-northeast-1.compute.amazonaws.com
+   - $ssh -i "aws_pwd.pem" ubuntu@**각자의 Public DNS **
 
    - **Welcome to Ubuntu 18.04.1 LTS.....** 을 확인하면 접속이 완료된것이다.
-
    - 이 후로 내리는 모든 명령어는 여러분의 컴퓨터에 적용되는게 아니라 aws cloud에 올라가있는 컴퓨터에 적용되는 것이다.
-
    - 접속을 끊고 싶으면 $exit 을 하면 된다.
 
 #### 2. window에서 접속해보기
@@ -70,13 +69,11 @@
 
    - xshell 을 설치한다. [설치링크](https://www.netsarang.co.kr/download/down_form.html?code=612) 설치는 굉장히 빨리된다.
 
-   - 생성한 instace 에 왼쪽 클릭을 하면 **Connect** 가 나온다. 클릭한다.
-
    - 다운로드 파일에 aws_pwd_pem.txt 파일이 있는지 확인한다. 이 파일은 중요한 파일이기에 따로 관리해준다. (C)에서 dev라는 폴더를 새로 만들고 그 안에 key라는 폴더를 만들어 aws_pwd_pem파일을 옮겨준다.
 
    - 왼쪽 상단에 새로 만들기 (Alt+N)을 클릭한다.
 
-   - **Connect** 4번에 있는 Public DNS 정보를 **호스트**에 적어준다.
+   - **각자의 Public DNS 정보**를 **호스트**에 적어준다.
 
      <img src="./image/91.png" width="60%">
 

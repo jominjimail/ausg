@@ -109,7 +109,7 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
    [다른 region이름 참고](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 
 5. Default output format [None]: **걍 엔터**
-6. $aws s3 help // man page 입니다.
+6. $aws s3 help // s3 관련 명령어 옵션이 무엇이 있는지 먼저 살펴봅시다.
 
 
 
@@ -127,7 +127,9 @@ AWS의 제어, 관리를 Command Line으로 할 수 있다.
 
 - 업로드를 하기전에 업로드 할 파일을 생성해봅시다.
 
-- $sudo nano test.txt // 내용입력 후 저장, 나오기
+- $sudo nano test.txt 
+
+- 내용 입력 후 저장하고 나오기 **Ctrl+o** -> **Enter** -> **Ctrl+x**
 
   <img src="./image/83.png" width="100%"> 
 
