@@ -1,11 +1,12 @@
-## Backpropagarion Neural Network
+## *Backpropagarion Neural Network*
 
-- 단층 퍼셉트론의 선형분리 문제점을 해결가능한 Network이다.
+- input layer와 output layer 사이에 하나 이상의 *hidden layer*을 가지는 단방향 신경 회로망이다. 
+- 단층 퍼셉트론의 선형분리 문제점을 해결가능한 회로망이다.
 - 일반적인 continuous function approximation 문제 해결을 위해 널리 사용한다.
 - 80년대 중반 등장한 Error Back propagation Algorithm을 바탕으로 한다.*generalized delta rule*
-- 원하는 목표값(d)와 실제 출력값 (y)사이의 오차제곱합으로 정의된 Error Function의 값을 최소화하는 방식으로 학습한다.
+- 원하는 목표값(d)와 실제 출력값 (y)사이의 오차제곱합으로 정의된 *Error Function*의 값을 최소화하는 방식으로 학습한다.
 
-### Error backpropagation
+### *Error backpropagation*
 
 - Errpr backpropagation Algorithm이란
   - hidden layer의 학습을 위해 output layer에서 발생한 오류를 이용하여 hidden layer 가중치를 재계산한다.
@@ -17,9 +18,7 @@
 
 
 
-### 순전파
-
-
+### *순전파*
 
 1. 신경망을 통과해서 도달한 결과값은 오차를 포함한다.
 2. 최종적으로 나온 오차는 여러 계산 과정들을 거치며 합산된 값이다.
@@ -48,9 +47,7 @@
 
 
 
-### 역전파
-
-
+### *역전파*
 
 - 1* 1.1(소비세) = 1.1
 - 1.1 * 2(사과개수) = 2.2
@@ -129,9 +126,7 @@ class MulLayer:
 
 
 
-### 활성화 함수 계층 구현
-
-
+### *활성화 함수 계층 구현*
 
 ##### 1. ReLu 함수 구현
 
@@ -191,7 +186,9 @@ Y = np.dot(X,W) +B
 
  [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/affine.ipynb)
 
-### softmax-with-Loss 계층
+
+
+### *softmax-with-Loss 계층*
 
 - 추론: 가장 좋은 결과를 찾아 내는 것
 - 학습: 앞의 변수들(W,B)을 수정해서 추론에서 나온 가장 높은 값을 크게하고 다른 값들은 작게 만드는 과정 (정답지, 라벨이 필요함)
