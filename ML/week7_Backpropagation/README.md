@@ -1,4 +1,23 @@
-## 순전파
+## Backpropagarion Neural Network
+
+- 단층 퍼셉트론의 선형분리 문제점을 해결가능한 Network이다.
+- 일반적인 continuous function approximation 문제 해결을 위해 널리 사용한다.
+- 80년대 중반 등장한 Error Back propagation Algorithm을 바탕으로 한다.*generalized delta rule*
+- 원하는 목표값(d)와 실제 출력값 (y)사이의 오차제곱합으로 정의된 Error Function의 값을 최소화하는 방식으로 학습한다.
+
+### Error backpropagation
+
+- Errpr backpropagation Algorithm이란
+  - hidden layer의 학습을 위해 output layer에서 발생한 오류를 이용하여 hidden layer 가중치를 재계산한다.
+  - 이 값을 다시 input layer으로 역전파(backpropagation)시켜 가중치를 재계산한다.
+  - output layer의 오류를 *Gradient Descent Method*기법으로 최소화한다.
+- 문제점
+  - 상위층의 목표값과 실제 출력값 간의 오류를 하위층으로 역전파시키는 것은 생물학적 현상과 일치하지 않는다.
+  - 하위층의 각 뉴런이 상위층의 목표값을 알지 못하는 경우가 일반적인 생물학적 현상이다.
+
+
+
+### 순전파
 
 
 
@@ -9,7 +28,7 @@
 5. 수치미분 대신 오차역전파 사용으로 효율을 좋게 한다. 
 
 
-### 1. 계산그래프란?
+##### 1. 계산그래프란?
 
 
 - 계산과정을 그래프로 나타냄
@@ -17,7 +36,7 @@
 <img src="./image/1.png" width="60%">
 
 
-### 2. 국소적 계산이란?
+##### 2. 국소적 계산이란?
 
 
 - 노드에 직접 관계된 정보만으로 계산
@@ -29,7 +48,7 @@
 
 
 
-## 역전파
+### 역전파
 
 
 
@@ -41,14 +60,14 @@
 <img src="./image/2.png" width="60%">
 
 
-### 1. 연쇄법칙
+##### 1. 연쇄법칙
 
 
 <img src="./image/5.png" width="40%">
 <img src="./image/6.png" width="60%">
 
 
-### 2. 덧셈노드의 역전파
+##### 2. 덧셈노드의 역전파
 
 
 - 그대로 전달
@@ -70,7 +89,7 @@ class AddLayer:
         return dx,dy
 ```
 
-### 3. 곱셈노드의 역전파
+##### 3. 곱셈노드의 역전파
 
 
 - x,y 값 바꿔서 계산
@@ -100,7 +119,7 @@ class MulLayer:
 <img src="./image/9.png" width="80%">
 
 
-### 4. 마지막에 나온 110, 2.2, 3.3, 165, 650 의 의미
+##### 4. 마지막에 나온 110, 2.2, 3.3, 165, 650 의 의미
 
 
 - 단위 1 이 변경되었을때, 결과값에 미치는 영향력
@@ -110,11 +129,11 @@ class MulLayer:
 
 
 
-## 활성화 함수 계층 구현
+### 활성화 함수 계층 구현
 
 
 
-### 1. ReLu 함수 구현
+##### 1. ReLu 함수 구현
 
 
 - 순전파에서 입력값이 0 이상인 경우는 들어온 값을 그대로 전달한다.
@@ -124,7 +143,7 @@ class MulLayer:
 <img src="./image/10.png" width="60%">
 
 
-### 2. sigmoid 함수 구현
+##### 2. sigmoid 함수 구현
 
 - 순전파
 <img src="./image/11.png" width="80%">
@@ -153,7 +172,7 @@ class Sigmoid:
 ```
 
 
-### 3. affine, sofrmax 함수 구현
+##### 3. affine, sofrmax 함수 구현
 
 
 > Affine 계층은 행렬 내적을 기하학에서 어파인 변환(affine transformation)이라고 하고, 어파인 변환을 수행하는 처리를 Affine 계층이라는 이름으로 만든다. 즉, 이전 계층의 모든 뉴런과 연결되어 있어 행렬의 내적(np.dot())을 사용하여 계산하는 계층/레이어를 Affine 계층/레이어라 부른다.
