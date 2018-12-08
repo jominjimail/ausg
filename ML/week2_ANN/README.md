@@ -56,7 +56,27 @@
 >이 한계에 부딪혀 한 동안 dark age of connectionism 이라고 불리는 기간이 있었다.
 >1969년 Minsky가 perceptiron이 linear가 아니면 아무것도 할 수 없다는 것을 증명했었다. (ex, xor) 아무튼, perceptron은 매우 간단한 Feed forward 네트워크의 일종이다. (선형 분류기)
 
+###### Example(AND Operation using Perceptron)
 
+<img src="./image/1.png" width="60%">
+
+- 뉴런에 입력되는 가중치의 합이 임계치 (0.5라 가정)을 초과하면 1, 아니면 0이다.
+- Activation function은 hard limiter이다.
+- 초기 W1, W2를 각각 0.6,0.7라 가정한다.
+
+<img src="./image/2.png" width="30%"> 
+
+delta rule을 사용해서 계산해보면, W0 = W0 +a[d(t)-y(t)]*X0 (a 알파는 0.1이라 가정)
+
+갱신된 W0 = 0.6 + 0.1(0-1)*0 = 0.6 , W1 = 0.7 + 0.1(0-1)*1 = 0.6
+
+갱신된 W0 = 0.6 + 0.1(0-1)1 = 0.5 , w1 = 0.6 + 0.1(0-0)0 = 0.6
+
+갱신된 W0 = 0.5 + 0.1(1-1)1 = 0.5 , W1 = 0.6 + 0.1(1-1)1 = 0.6
+
+갱신된 W0 = 0.5 (더이상 변화 없음) / W1 = 0.6 + 0.1(0-1) = 0.5 (더이상 변화 없음)
+
+0.5,0.5 로 만족 
 
 ### *the role of weights and dias*
 
@@ -97,4 +117,21 @@
 
   - binary threshold neuron이기 때문에 linearly separable하지 않은 문제를 풀 수가 없다. 단적인 예로는 XOR이다. 하나의 선을 그어서 판단해야하는데 아래 그림과 같이 하나의 선으로는 도무지 판단을 할 수가 없기때문이다. 또한 perceptron의 decision making은 summation으로 이루어지기 때문에 (1,1,2로 구성된 pattern A)와 (2,2로 구성된 pattern B)를 구분하는게 불가능하다. 이를 해결하는 방법은 hidden layer을 쌓는것이다. 확실히 learning이 훨씬 더 복잡하고 어려워지지만 훨씬 더 다양한 문제를 풀 수 있다. 
 
- ![Alt text](./image/p6.png)
+ ###### Example(AND Operation using Perceptron)
+
+<img src="./image/1.png" width="60%">
+
+- 뉴런에 입력되는 가중치의 합이 임계치 (0.5라 가정)을 초과하면 1, 아니면 0이다.
+- Activation function은 hard limiter이다.
+- 초기 W1, W2를 각각 0.6,0.7라 
+
+<img src="./image/3.png" width="30%">
+
+- 만족하는 W0, W1는 존재하지 않는다.
+- 하나의 Perceptron으로는 간단한 XOR 문제도 해결하지 못한다.
+- 이러한 문제를 해결하기 위해서 2개 또는 3개의 층을 사용한다.
+- Backpropagation Neural Network (Multi-layer Perceptron) 
+- Perceptron은 Multi-layer Perceptron및 Error Back progation Algorithm의 기반이다.
+
+<img src="./image/4.png" width="50%">
+

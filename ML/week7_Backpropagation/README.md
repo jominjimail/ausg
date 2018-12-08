@@ -167,11 +167,11 @@ Y = np.dot(X,W) +B
  - 배치처리란? 입력값이 10000개라면 하나하나 언제 계산하고 있을까. 컴퓨터가 처리할 수 있는 정도의 양을 배열로 묶어서 한번에 처리하는게 배치처리라한다.
  - X(2) 에서 (N,2) 로 수정한다. N묶음을 한번에 처리하는것이다. (Batch)
  <img src="./image/14.png" width="80%">
- 
+
  <img src="./image/22.png" width="80%">
- 
+
  [affine python 코드 예시](https://github.com/jominjimail/ausg/blob/master/ML/week7/affine.ipynb)
- 
+
 ### softmax-with-Loss 계층
 
 - 추론: 가장 좋은 결과를 찾아 내는 것
@@ -180,7 +180,7 @@ Y = np.dot(X,W) +B
 
 
  <img src="./image/16.png" width="80%">
- 
+
 - sofrmax 함수로 교차 엔트로피 오차를 사용하면 역전파가(y1-t1, y2-t2, y3-t3)로 간단해진다. 이렇게 계산 결과를 단순하고 쉽게 만들기 위해 설계된 것이 교차 엔트로피 오차이다.
 
 - sofr max Cross Entropy Error 예시
