@@ -18,4 +18,4 @@
 
 시간 : 12/06(목) 19:00 ~ 21:00
 
-<img src="./image/100.png" width="100%"> 
+<img src="./image/100.png" width="50%"> 
