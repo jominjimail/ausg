@@ -35,10 +35,9 @@
     
       P(A) = P(A|B) P(B) + P(A|~B) P(~B) = P(A ^ B) + P(A ^ ~B)
 
+3. 독립
 
-   - 독립
-
-     A와 B는 독립이다. iff 
+   - A와 B는 독립이다. iff 
 
      P(A ^ B) = P(A) P(B)
 
@@ -72,14 +71,13 @@
      >
      > 이런 상태를 c가 a,b 사이를 막고있다(block)고 한다. 
 
-
-3.  Naive Bayes Model
+4. Naive Bayes Model
 
    <img src="./image/6.png" width="40%">
 
-   P(Cause, Effect1,Effect2, ... , Effectn) 
+- P(Cause, Effect1,Effect2, ... , Effectn) 
 
-   = P(Cause) P(Effect1|Cause) P(Effect2|Cause)...P(Effectn|Cause) 
+     = P(Cause) P(Effect1|Cause) P(Effect2|Cause)...P(Effectn|Cause) 
 
    > 의대 교과서는 나이브 베이즈 모델로 가득차 있다고 한다. 
    >
