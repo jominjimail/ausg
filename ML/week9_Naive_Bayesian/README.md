@@ -1,4 +1,4 @@
-ㄴWeek 12 Naive Bayesian Network
+Week 12 Naive Bayesian Network
 
 1. Naive Bayes란
    - 지도 학습 알고리즘
@@ -147,20 +147,47 @@
 
      > didn’t like this movie => didn’t not_like not_this not_movie
 
-     또한 컴퓨터는 0에 가까운 **부동소수점(floating point number)**을 제대로 처리하지 못하기 때문에 우도의 곱은 로그 우도의 합으로 처리합니다. 
+     또한 컴퓨터는 0에 가까운 **부동소수점(floating point number)** 을 제대로 처리하지 못하기 때문에 우도의 곱은 로그 우도의 합으로 처리합니다. 
 
 10. Bayesian networks
     - 위의 예시 보다 더 복잡하고 depth가 깊은 모델이다.
+
     - <img src="./image/18.png" width="80%">
-    -  Variables: Burglary, Earghquake, Alarm, JohnCalls, MaryCalls
+
+    - Variables: Burglary, Earghquake, Alarm, JohnCalls, MaryCalls
+
     - Network topology는 다음과 같다.
       - A burglar can make the alarm ringing
       - An earthquake can sometimes make the alarm ringing
       - The alarm can cause Mary to call
       - The alarm can cause John to call
+
     - 나는 일을 하러 나갔다. 내 집에는 강도가 들어오면 알람이 울리는 시스템을 설치하였다. 나의 이웃인 john이 내 집의 알람이 울린다고 전화가 왔다. 하지만 mary는 전화가 오지 않았다. 이때, 강도가 실제로 들어왔을 확률은?
+
     - 이렇게나 복잡하고 와닿지 않는 확률을 구할 수 있는 강력한 모델이 naive bayesian이다. 단 10개의 확률로 모든 확률을 구할 수 있다고 이해하면 된다.
       -  P(burglary | alarm)
-      - P(earthquake | JCalls, MCalls)
-      - P(JCalls, MCalls | burglary, earthquake)
-    - 
+      -  P(earthquake | JCalls, MCalls)
+      -  P(JCalls, MCalls | burglary, earthquake)
+
+    - 문제를 풀어보자 
+
+      - Express the joint distribution P(B,E,A,J,M) in terms of the
+        conditional probabilities (and independencies) expressed in the Bayesian Network
+        above.
+
+        - P(B, E, A, J ,M ) = P( J | A) P(M | A) P(A | B,E) P(B) P(E)
+
+          각 variable중 직접적으로 영향을 받는 부모만 신경쓴다. Alarm 의 부모는 Burglary와 Earthquake이다. 
+
+      - We want to know the probability of a Burglary knowing that John Called and
+        Mary Called. More precisely, Which variables are hidden?
+
+        - hidden variables are E and A.
+
+          P(B | JohnCalls = true, MaryCalls = true) 의 확률을 구하고 싶은것이다. 주어지지 않은 조건은 **알고 싶은 결과인 B와 이미 알고 있는 J, M을 제외한** E와 A이다. 
+
+      - Calculate P(B|J,M), i.e., calculate P(Burglary=true | JohnCalls=true, MaryCalls=true) with at least two decimal orders.
+
+        - <img src="./image/19.png" width="100%">
+
+           <img src="./image/20.jpg" width="100%"> 
