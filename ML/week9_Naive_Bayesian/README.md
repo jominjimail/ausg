@@ -73,11 +73,11 @@
 
 4. Naive Bayes Model
 
-   <img src="./image/6.png" width="40%">
-
-- P(Cause, Effect1,Effect2, ... , Effectn) 
+   - P(Cause, Effect1,Effect2, ... , Effectn) 
 
      = P(Cause) P(Effect1|Cause) P(Effect2|Cause)...P(Effectn|Cause) 
+
+   <img src="./image/6.png" width="40%">
 
    > 의대 교과서는 나이브 베이즈 모델로 가득차 있다고 한다. 
    >
