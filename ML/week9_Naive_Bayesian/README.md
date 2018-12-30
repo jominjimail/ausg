@@ -1,4 +1,4 @@
-Week 12 Naive Bayesian Network
+ㄴWeek 12 Naive Bayesian Network
 
 1. Naive Bayes란
    - 지도 학습 알고리즘
@@ -77,7 +77,7 @@ Week 12 Naive Bayesian Network
 
      = P(Cause) P(Effect1|Cause) P(Effect2|Cause)...P(Effectn|Cause) 
 
-   - <img src="./image/6.png" width="40%">
+     <img src="./image/6.png" width="40%">
 
    - 의대 교과서는 나이브 베이즈 모델로 가득차 있다고 한다. 환자가 기침을 하고 열이 많고 콧물은 안 났을때 감기일 확률을 몇 %일까?
 
