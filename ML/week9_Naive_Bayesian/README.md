@@ -26,13 +26,13 @@
 
 
      ##### *베이즈 규칙결론:* 
-
+    
      P(A|B) = P(B|A) P(A) / P(B)
-
+    
      P(disease | symptom) = P(symptom | disease) P(disease) / P(symptom)
-
+    
      disease = 광우병 , symptom = 마비
-
+    
       P(A) = P(A|B) P(B) + P(A|~B) P(~B) = P(A ^ B) + P(A ^ ~B)
 
 
@@ -49,12 +49,10 @@
 
 
      여러 개의 변수를 다루고 있는 확률 문제에서 중요한 요소 중 하나는 조건부 독립이다.
-
-     > ex) C가 주어진 상황에서 A 과 B가 조건부 독립일 때  
-     >
-     > P(A | B,C) = P(A|C)
-     >
-     > P(B | A,C) = P(B|C)
+    
+     ex) C가 주어진 상황에서 A 과 B가 조건부 독립일 때  
+     P(A | B,C) = P(A|C)
+     P(B | A,C) = P(B|C)
      >
      > P(A ^ B|C) = P(A|C) P(B|C)
      >
