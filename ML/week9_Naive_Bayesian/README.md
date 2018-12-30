@@ -77,21 +77,16 @@
 
      = P(Cause) P(Effect1|Cause) P(Effect2|Cause)...P(Effectn|Cause) 
 
-   <img src="./image/6.png" width="40%">
+   - <img src="./image/6.png" width="40%">
 
-   > 의대 교과서는 나이브 베이즈 모델로 가득차 있다고 한다. 
-   >
-   > 환자가 기침을 하고 열이 많고 콧물은 안 났을때 감기일 확률을 몇 %일까?
-   >
-   > 기침(Cough: Effect1) = T
-   >
-   > 열(Fever: Effect2) = T
-   >
-   > 콧물(Runny Nose: Effect3) = F
-   >
-   > 일 때, 감기(Cold)일 확률은? 
-   >
-   > (감기 | 기침, 열, ~콧물) 이 우리가 구하고 싶은 결과값이다.
-   >
-   >
+   - 의대 교과서는 나이브 베이즈 모델로 가득차 있다고 한다. 환자가 기침을 하고 열이 많고 콧물은 안 났을때 감기일 확률을 몇 %일까?
 
+     기침(Cough: Effect1) = T
+
+     열(Fever: Effect2) = T
+
+     콧물(Runny Nose: Effect3) = F 일 때, 감기(Cold)일 확률은? 
+
+     감기 | 기침, 열, ~콧물) 이 우리가 구하고 싶은 결과값이다.
+
+   - 
