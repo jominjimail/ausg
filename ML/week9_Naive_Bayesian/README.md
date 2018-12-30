@@ -1,11 +1,12 @@
-Week 12 Naive Bayesian Network
+## Week 12 Naive Bayesian Network
 
-1. Naive Bayes란
+1. #### Naive Bayes란
+
    - 지도 학습 알고리즘
    - 기초 이론: 베이즈 정리
-   - Naive는 *순진하다*라는 뜻을 가지고 있습니다. 이런 수식어가 붙인 이유는 데이터셋의 모든 특징들이 동등하고 독립적이라고 가정하기 때문입니다.
+   - Naive는 *순진하다* 라는 뜻을 가지고 있습니다. 이런 수식어가 붙인 이유는 데이터셋의 모든 특징들이 동등하고 독립적이라고 가정하기 때문입니다.
 
-2. 기초 이론 베이즈 정리
+2. #### 기초 이론 베이즈 정리
 
    - 일반적으로 사건 **A1, A2, A3**가 서로 배반(mutually exclusive)이고 **A1, A2, A3**의 합집합이 표본공간(sample space)과 같으면 사건 **A1, A2, A3**는 표본공간 **S**의 **분할**이라고 정의합니다. 우리가 관심있는 사건 **B**가 나타날 확률을 그림과 식으로 나타내면 다음과 같습니다.
 
@@ -35,7 +36,7 @@ Week 12 Naive Bayesian Network
     
       P(A) = P(A|B) P(B) + P(A|~B) P(~B) = P(A ^ B) + P(A ^ ~B)
 
-3. 독립
+3. #### 독립
 
    - A와 B는 독립이다. iff 
 
@@ -71,7 +72,7 @@ Week 12 Naive Bayesian Network
      >
      > 이런 상태를 c가 a,b 사이를 막고있다(block)고 한다. 
 
-4. Naive Bayes Model
+4. #### Naive Bayes Model
 
    - P(Cause, Effect1,Effect2, ... , Effectn) 
 
@@ -89,7 +90,7 @@ Week 12 Naive Bayesian Network
 
      (감기 | 기침, 열, ~콧물) 이 우리가 구하고 싶은 결과값이다.
 
-5. 모델 예시 (1)
+5. #### 모델 예시 (1)
 
    - 문서 이진분류 문제를 예로 들어보겠다. 문서 d가 주어졌을때 범주 c1 혹은 c2로 분류하는 것이다. 지금까지 설명한 베이즈 법칙을 다시 쓰면 아래와 같다.
 
@@ -109,18 +110,20 @@ Week 12 Naive Bayesian Network
 
      <img src="./image/10.png" width="70%">
 
-6. 모델 예시 (2) bag of words representation
+6. #### 모델 예시 (2) bag of words representation
 
    - 각 단어가 독립임을 가정하는 나이브 베이즈 분류기는, 문서표현 방식 중 가장 간단한 기법인 bag-of-words와 본질적으로 같은 접근을 취한다. 나이브 베이즈 분류기는 범주가 주어졌을 때 각 단어가 나타날 확률(우도)의 연쇄적인 곱으로 계산을 하는데, a다음에 b를 곱하든 그 반대로 곱하든 결과가 같다.
 
    - bag-of-words도 나이브 베이즈 모델처럼 단어의 등장 순서를 무시한다. 그저 문저 내 빈도만을 따져서 문서를 표현한다. 문서를 어떤 가방(bag)안에 넣고 이를 뒤섞는다는 느낌 정도로 이해하면 직관적일 것 같다.
    - <img src="./image/11.png" width="100%"> 
 
-7. 모델 예시 (3) unigram model
+7. #### 모델 예시 (3) unigram model
+
    - 나이브 베이즈 분류기는 언어모델의 유니그램모델과도 접점이 많다. 유니그램 모델은 도메인별로 각 단어의 등장 확률을 구해놓은 아래 표와 같은 형태이다.
    - <img src="./image/12.png" width="80%">
    - 임의의 문자열이 주어졌을 때 유니그램 모델은 단어별 등장 확률을 반복적으로 곱해 해당 문자열이 나타날 확률을 계산한다. 나이브 베이즈 모델과 비교해 생각해볼때 사전확률을 제오하면 그 과정이 동일하다. 
-8. 계산예시 1
+8. #### 계산예시 1
+
    - 다음과 같은 말 뭉치가 주어졌다고 하자.
    - <img src="./image/13.png" width="80%">
    - 우선 사전 확률부터 구해보자. 학습 데이터 전체 5건의 문서 가운데 3개가 부정(-), 2개가 긍정 (+)이므로 다음과 같다.
@@ -135,7 +138,7 @@ Week 12 Naive Bayesian Network
    - 나이브 베이즈 모델의 학습은 학습말뭉치의 빈도 수를 세어서 위의 사전 확률과 우도를 모두 구해놓는 과정을 가리킨다. 추론(inference)은 사전확률과 우도의 곱을 계산하고, 큰 쪽의 범주를 할당한다.
    - 검증 데이터 문서에 학습 데이터에 없는 단어가 있을 경우엔 우도가 존재하지 않으므로 이를 뺴고 계산한다. 또한, 관사, 전치사 드 범주 분류에 불필요하다고 판단되는 단어들에 대해서는 불용어(stopwords)처리를 해서 뺴기도 한다.
 
-9. 장단점 및 최적화
+9. #### 장단점 및 최적화
 
    - 나이브 베이즈 분류기는 앞선 예시의 우도 테이블 하나만 있으면 분류가 가능하다. 사전확률이 다르다면 전체 문서 범주 비율만 더 반영해주면 된다. 그만큼 계산 복잡성이 낮다는 얘기이다. 딥러닝 이전 자연언어처리 기법으로 각광 받았던 모델이다.
 
@@ -149,7 +152,8 @@ Week 12 Naive Bayesian Network
 
      또한 컴퓨터는 0에 가까운 **부동소수점(floating point number)** 을 제대로 처리하지 못하기 때문에 우도의 곱은 로그 우도의 합으로 처리합니다. 
 
-10. Bayesian networks
+10. #### Bayesian networks
+
     - 위의 예시 보다 더 복잡하고 depth가 깊은 모델이다.
 
     - <img src="./image/18.png" width="80%">
@@ -169,7 +173,7 @@ Week 12 Naive Bayesian Network
       -  P(earthquake | JCalls, MCalls)
       -  P(JCalls, MCalls | burglary, earthquake)
 
-    - 문제를 풀어보자 
+    - ##### 문제를 풀어보자 
 
       - Express the joint distribution P(B,E,A,J,M) in terms of the
         conditional probabilities (and independencies) expressed in the Bayesian Network
