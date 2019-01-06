@@ -1,4 +1,4 @@
-Week 13 Drop out
+## Week 13 Drop out
 
 참조 논문: [A simple Way to Prevent Neural Networks from Overfitting](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)
 
