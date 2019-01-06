@@ -26,13 +26,19 @@
 
 4. #### Overfitting 해결을 위한 지능적 훈련 데이터 만들기
 
-   - Affine Transform을 이용한 지능적 훈련 데이터 생성
-   - <img src="./image/4.png" width="60%">
+   - ##### Affine Transform을 이용한 지능적 훈련 데이터 생성
+
+   - <img src="./image/4.png" width="40%">
+
    - 오른쪽 데이터는 왼쪽 데이터를 반시계 방향으로 15도 회전하여 얻은 데이터이다. affine transform은 아리와 같은 4가지 연산을 할 수 있으며 이것들을 조합하면 많은 훈련 데이터를 확보할 수 있다.
+
    -  <img src="./image/5.png" width="60%">
-   - Elastic Distortion을 이용한 지능적 훈련 데이터 생성
+
+   - ##### Elastic Distortion을 이용한 지능적 훈련 데이터 생성
+
    - 마이크로 소프트에서 효과적인 훈련 데이터 생성을 위해 *elastic distortion* 이라는 방법을 개발하였고 특허 출원을 하였다. affine transform과 같은 단순한 변형이 아니라, 아래 그림처럼 다양한 방향으로의 displacement vector을 만들어 내고 그것을 통해 좀 더 복잡한 형태의 데이터를 만들어 낼 수 있게 되었다.
-   -  <img src="./image/6.png" width="60%">
+
+   -  <img src="./image/6.png" width="40%">
 
 5. ####  신경망에서 Overfitting 해결을 위한 dropout 방식 
 
@@ -41,9 +47,9 @@
 
 6. ####  Dropout 의 효과
 
-   - Voting 효과: 일정한 mini-batch 구간 동안 줄어든 망을 이용해 학습을 하게 되면, 그 망은 그 망 나름대로 overfitting이 되며, 다른 mini-batch 구간 동안 다른 망에 대해 학습을 하게 되면, 그망에 대해 다시 일정 정도 overfitting이 된다. 이런 과정을 무작위로 반복을 하게 되면, voting에 의해 평균 효과를 얻을 수 있기 때문에, 결과적으로 regularization과 비슷한 효과를 얻을 수 있데 되는 것이다.
+   - **Voting 효과**: 일정한 mini-batch 구간 동안 줄어든 망을 이용해 학습을 하게 되면, 그 망은 그 망 나름대로 overfitting이 되며, 다른 mini-batch 구간 동안 다른 망에 대해 학습을 하게 되면, 그망에 대해 다시 일정 정도 overfitting이 된다. 이런 과정을 무작위로 반복을 하게 되면, voting에 의해 평균 효과를 얻을 수 있기 때문에, 결과적으로 regularization과 비슷한 효과를 얻을 수 있데 되는 것이다.
 
-   - co-adaptation을 피하는 효과: Regularization에서 살펴본 것처럼, 특정 뉴런의 바이어스나 가중치가 큰 값을 갖게 되면 그것의 영향이 커지면서 다른 뉴런들의 학습 속도가 느려지거나 학습이 제대로 진행이 되지 못하는 경우가 있다. 하지만 dropout을 하면서 학습을 하게 되면, 결과적으로 어떤 뉴런의 가중치나 바이어스가 특정 뉴런의 영향을 받지 않기 때문에 결과적으로 뉴련들이 서로 동조화(co-adaptation)이 되는 것을 피할 수 있다.
+   - **co-adaptation을 피하는 효과**: Regularization에서 살펴본 것처럼, 특정 뉴런의 바이어스나 가중치가 큰 값을 갖게 되면 그것의 영향이 커지면서 다른 뉴런들의 학습 속도가 느려지거나 학습이 제대로 진행이 되지 못하는 경우가 있다. 하지만 dropout을 하면서 학습을 하게 되면, 결과적으로 어떤 뉴런의 가중치나 바이어스가 특정 뉴런의 영향을 받지 않기 때문에 결과적으로 뉴련들이 서로 동조화(co-adaptation)이 되는 것을 피할 수 있다.
 
    - 이로써 좀 더 선명한 feature을 얻을 수 있다.
 
