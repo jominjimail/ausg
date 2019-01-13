@@ -115,12 +115,14 @@
 
 9. L1 Regularization이란
    - L1은 2차항 대신에 1차항이 오며, 식은 아래와 같다.
-   - <img src="C:/Users/jomin/Documents/GitHub/ausg/ML/week14_Mathmatics/image/9.png" width="30%">
+   - <img src="./image/9.png" width="30%">
    - 앞서 살펴본 것과 마찬가지로 가중치 w에 대해서 편미분을 수행하면, 결과적으로 새로운 가중치는 아래와 같이 결정된다.
-   - <img src="C:/Users/jomin/Documents/GitHub/ausg/ML/week14_Mathmatics/image/10.png" width="50%">
+   - <img src="./image/10.png" width="50%">
    - 결과적으로 위 식을 보면, weight값 자체를 줄이는 것이 아니라, w의 부호에 따라 상수 값을 빼주는 방식으로 regularization을 수행한다.
 
 10. L1/ L2의 차이점과 선택 기준
     - L1은 통상적으로 상수 값을 빼주도록 되어 있기 때문에 작은 가중치들은 거의 0으로 수렴이 되며, 몇 개의 중요한 가중치들만 남게 된다. 그러므로 몇 개의 의미 있는 값을 끄집어내고 싶은 경우에는 L1이 효과적이기 때문에 sparse model(coding)에 적합하다.
+
     - 단, 기본 수식에서도 알 수 있듯이 미분이 불가능한 점이 있기 때문에 gradient-based learning에 적용할 때는 주의가 필요하다.
-    - <img src="./image/10.png" width="100%"> 
+
+       
