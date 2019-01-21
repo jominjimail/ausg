@@ -8,13 +8,13 @@
 
    - network를 구상할때 가장 먼저 해야할 일은 weight matrix를 *적절히 초기화* 하는 일이다. 
 
-   - <img src="./image/3.png" width="70%"> 
+     <img src="./image/3.png" width="70%"> 
 
-   - 같은 코드를 실행시켜도 위와 같이 다른 그래프를 볼 수 있다. random 값에 따라 달라지는 것이다.
+     같은 코드를 실행시켜도 위와 같이 다른 그래프를 볼 수 있다. random 값에 따라 달라지는 것이다.
 
-   - 모든 weight값을 0 으로 설정한다면? Deep Learning 알고리즘은 전혀 동작하지 않을 것이다. x의 값이 무엇이건 0이되고, 지금까지 거쳐온 layer의 값들 또한 모두 무효가 된다.
+     모든 weight값을 0 으로 설정한다면? Deep Learning 알고리즘은 전혀 동작하지 않을 것이다. x의 값이 무엇이건 0이되고, 지금까지 거쳐온 layer의 값들 또한 모두 무효가 된다.
 
-   - 적절히 알맞게 초기화하기 위해서는
+     적절히 알맞게 초기화하기 위해서는
 
      - Not all 0's
      - Challenging issue ( 이 분야는 아직 해야할 것이 많다.)
@@ -24,7 +24,7 @@
 
      -   Restriction이란 단어를 붙인 것은 같은 layer 안에서 어떠한 연결도 존재하지 않기 때문이다. 단지 2개의 layer에 대해서만 x 값을 사용해서 동작하고 y 값도 사용하지 않는 초기화 방법이다.
 
-     - <img src="./image/1.png" width="80%">
+       <img src="./image/1.png" width="80%">
 
      -   RBM은 현재 layer와 다음 layer에 대해서만 동작한다. **(forward)** 현재 layer에 들어온 x값에 대해 weight을 계산한 값을 다음 layer에 전달한다. **(backward)** 이렇게 전달 받은 값을 이번에는 거꾸로 이전(현재) layer에 weight 값을 계산해서 전달한다.
 
@@ -38,21 +38,32 @@
    - Good news
 
      - 2010년에 발표된 xavier 초기화와 2015년에 xavier초기화를 응용한 He 초기화가 있따. 이들 초기화 방법은 놀랍도록 단순하고, 놀랍도록 결과가 좋다.
+
      - Xavier initialization: X. Glorot and Y.Bengio, "Understanding the difficulty of training deep feedforward neural networks," in International conference on artificial intelligence and statistics, 2010
+
      - He's initialization: K. He, X. Zhang, S. Ren, and J. Sun, "Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification," 2015
+
      - xavier(샤비어) - 남자의 이름으로 나온다.
-     - <img src="./image/2.png" width="90%">
+
+       <img src="./image/2.png" width="90%">
+
      - 입력값의 개수를 fan-in, 출력값의 개수를 fan-out이라고 부른다.
+
      - 간단한 수식으로 RBM와 비슷한 성능을 냈다고 한다.
-     -   홍콩 중문대 박사과정에 있던 he가 2015년에 이 방식을 사용해서 ImageNet에서 3% 에러를 달성했다.
-     - <img src="./image/4.png" width="80%">
+
+     - 홍콩 중문대 박사과정에 있던 he가 2015년에 이 방식을 사용해서 ImageNet에서 3% 에러를 달성했다.
+
+       <img src="./image/4.png" width="80%">
 
 2. #### Hyperparameter optimization
 
    - 신경망이나 기계 학습에서의 Hyperparameter란?
+
      - 신경망 학습을 통해서 튜닝 또는 최적화 해야하는 주 변수가 앙니라, 학습 진도율이나 일반화 변수처럼 사람들이 선험적 지식으로 (priori) 설정하거나 또는 외부 모델 메커니즘을 통해 자동으로 설정이 되는 변수를 말한다.
      - meta-parameters 또는 free parameter라고도 불린다.
+
    - Hyperparameter은 어떤 것들이 있을까?
+
      - Learning rate
      - Cost function
      - Regularization parameter
@@ -61,9 +72,13 @@
      - Hidden unit의 개수
      - 가중치 초기화(Weight initialization)
      - etc..
+
    - *신경망을 통한 학습이란 결과적으로 cost function(loss function)을 최소화 시키는 가중치(weight)와 바이어스 값들을 찾아내는 것이지만, overfitting의 문제에 빠지지 않고 기대했던 수준의 결과를 얻으려면, hyperparameter에 대한 최적화 작업이 선행이 되어야 한다.*
-   - 하지만, 안타깝게도 아직까지는 황금룰(golden rule)이 없다는 것이 일반적이고, 많은 부분을 경험이나 설계자의 직관에 의존해야 하는 실정이다. *신경망을 처음 시작하는 사람들에게는 골칫거리가 된다.*
-   - 그래도 나름 정리해본 최적화 하는 방법
+
+     하지만, 안타깝게도 아직까지는 황금룰(golden rule)이 없다는 것이 일반적이고, 많은 부분을 경험이나 설계자의 직관에 의존해야 하는 실정이다. *신경망을 처음 시작하는 사람들에게는 골칫거리가 된다.*
+
+     그래도 나름 정리해본 최적화 하는 방법
+
      - Manual Search
        - 말 그대로 설계자의 직관이나 경험에 기반하여, 최적의 파라미터를 추정하고 결과를 관찰하는 방법이다. 어떤 *탐색 이론* 을 사용하는가에 따라 시간이나 질이 달라질 수 있다. 값을 하나씩 대입해보며, 최적의 답을 찾거나 시간이 허용하는 선에서의 최적의 답을 찾으면 된다.
      - Grid Search
