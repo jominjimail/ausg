@@ -34,7 +34,7 @@
 
      즉, filter(w)을 *옮겨가며* 작업을 반복해야한다. *얼마나 ?몇 칸씩?* 옮겨야 하는가는 **stride** 값이 정해준다. 위 예시에서 32x32 image에 5x5 filter를 stride 1로 준다면, 30x30의 output을 얻게 된다.
 
-   - <img src="./image/7.png" width="80%">
+     <img src="./image/7.png" width="80%">
 
      <img src="./image/6.png" width="60%">
 
