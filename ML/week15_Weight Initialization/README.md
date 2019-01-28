@@ -37,7 +37,7 @@
 
    - Good news
 
-     - 2010년에 발표된 xavier 초기화와 2015년에 xavier초기화를 응용한 He 초기화가 있따. 이들 초기화 방법은 놀랍도록 단순하고, 놀랍도록 결과가 좋다.
+     - 2010년에 발표된 xavier 초기화와 2015년에 xavier초기화를 응용한 He 초기화가 있다. 이들 초기화 방법은 놀랍도록 단순하고, 놀랍도록 결과가 좋다.
 
      - Xavier initialization: X. Glorot and Y.Bengio, "Understanding the difficulty of training deep feedforward neural networks," in International conference on artificial intelligence and statistics, 2010
 
@@ -59,7 +59,7 @@
 
    - 신경망이나 기계 학습에서의 Hyperparameter란?
 
-     - 신경망 학습을 통해서 튜닝 또는 최적화 해야하는 주 변수가 앙니라, 학습 진도율이나 일반화 변수처럼 사람들이 선험적 지식으로 (priori) 설정하거나 또는 외부 모델 메커니즘을 통해 자동으로 설정이 되는 변수를 말한다.
+     - 신경망 학습을 통해서 튜닝 또는 최적화 해야하는 주 변수가 아니라, 학습 진도율이나 일반화 변수처럼 사람들이 선험적 지식으로 (priori) 설정하거나 또는 외부 모델 메커니즘을 통해 자동으로 설정이 되는 변수를 말한다.
      - meta-parameters 또는 free parameter라고도 불린다.
 
    - Hyperparameter은 어떤 것들이 있을까?
