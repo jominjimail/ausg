@@ -31,25 +31,32 @@
 3. ### 기존 Multi-layered Neural Network의 문제점
 
    - 필기체 A를 인식하기 위해 MLN로 네트워크를 구성해보자
-   - <img src="./image/13.png" width="70%">
+
+     <img src="./image/13.png" width="70%">
+
    - 236개의 입력단과 100개의 hidden-layer 및 26개의 출력단으로 구성되면 이 망에 필요한 weight와 bias는 총 28,326개가 된다.
+
      - 입력단에 1x1 의 데이터가 들어가게 되는데 이때, 위치 정보가 사라진다.
+
      - 만약 전체 글자에서 only 2 픽셀값이 달라져도 새로운 학습 데이터로 처리해줘야 한다.
+
      - 글자의 크기가 달라지거나, 글자가 회전되거나 변형이(distortion)이 조금만 생기더라도 새로운 학습 데이터를 넣어주지 않으면 좋은 결과를 기대하기 어렵다.
-     - <img src="./image/14.png" width="50%">
+
+       <img src="./image/14.png" width="50%">
+
      - 결과적으로 기존 multi-layered neural network는 글자의 topology는 고려하지 않고, 말 그대로 raw data에 대해 직접적으로 처리하기 때문에 많은 학습 데이터가 필요하고, 이에 따른 학습 시간이 필요하다는 문제점이 있다.
 
 4. ### 그럼, ***convolution*** 이란?
 
    - 영상 처리 분야에서 convolution은 주로 filter 연산에 사용이 되며, 영상으로부터 특정 feature들을 추출하기 위한 필터를 구현할 때 convolution을 사용한다.
 
-   - <img src="./image/10.gif" width="50%">
+     <img src="./image/10.gif" width="50%">
 
    - 컴퓨터는 그림을 여러개의 픽셀로 이루어진 행렬로 본다.
 
      convolution matrix는 이 커다란 픽셀 배열에 작은 행렬을 통해 그 픽셀의 값을 수정하는 방법이다.
 
-     <img src="C:/Users/jomin/Documents/GitHub/ausg/CNN/week16_CNN/image/8.png" width="50%">
+     <img src="./image/8.png" width="50%">
 
 5. ### CNN의 특징
 
@@ -66,14 +73,18 @@
 
    - 추출할때는 다양한 여러장을  추출하여  강인한 특징(왜곡,변형같은 환경변화에 잘 적응하는)을 유도하는데  이것을 feature maps이라 한다. 
 
-   - <img src="./image/9.png" width="80%">
+     <img src="./image/9.png" width="80%">
 
 6. ### subsampling이란?
 
    - 화면의 크기를 줄이는 과정이다.
+
    - 아래의 방법인 max pooling을 사용한다. (해당 영역의 최대치를 선택하는 기법)
+
    - 위 그림처럼 4개중 가장 큰 수를 선택한다. 이것은 뉴런이 가장 큰 신호에 반응하는것과 유사한다.
-   - <img src="./image/11.png" width="60%">
+
+     <img src="./image/11.png" width="60%">
+
    - 이렇게 하면 노이즈가 감소하고 속도도 빨라지고 영상의 분별력이 좋아진다고 한다.
 
 7. ### CNN으로
