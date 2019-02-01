@@ -35,3 +35,5 @@ CNN 모델
 - 모두를 위한 딥러닝 강좌 시즌 1 (Sung Kim): https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm
 - 카카오 AI 리포트 : https://brunch.co.kr/@kakao-it#articles
 - edwith : https://www.edwith.org/deeplearningchoi/joinLectures/10979
+
+## 관련 이슈
