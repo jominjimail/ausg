@@ -1,28 +1,36 @@
-## CNN 이란
+## Introduction to Convolutional Neural Network
 
 1. ### CNN 이란
 
    - 말 그대로 **convolution** 이라는 작업이 들어가는 NN을 의미한다.
 
-     <img src="./image/1.png" width="80%">
+     <img src="./image/0.png" width="80%">
 
-   - CNN은 크게 2단계로 특징 추출(feature extraction)과 분류(classification)으로 나뉜다.
+2. ### CNN의 역사 
 
-   - Feature extraction: 고유한 특징을 어떻게 찾을것인가?
+   - 초창기에 CNN을 개발한 분들이 고양이가 보는 것마다 *자극 받는 **뇌의 위치*** 가 다른 것을 보고 아이디어를 얻어 CNN을 만들었다고 한다. 
 
-   - convolution matrix을 이용하여 우리가 원하는 특징을 두드러지게 하는 방법으로 찾는다. 위의 그림을 보면, 입력 데이터로 주어진 '60 표지판'을 첫번째 feature maps 단계에서 숫자, 원 등을 두드러지게 하고 있음을 볼 수 있다.
+     - NN의 활성화 부분이 다르다.
 
-   - feature extraction은 2가지 방법 kernel과 pooling으로 이뤄진다.
+   - *특징 표현 학습(feature representation learning)* : image 전체를 보는 것이 아니라 부분을 보는 것이 핵심 아이디어이다.
 
-2. ### 그럼, ***convolution*** 이란?
-
-   - 초창기에 CNN을 개발한 분들이 고양이가 보는 것마다 *자극 받는 **뇌의 위치*** 가 다른 것을 보고 아이디어를 얻어 CNN을 만들었다고 한다. 그것이 특징 표현 학습(feature representation learning) 이다. 컴퓨터 스스로가 특징 표현을 만들어 낸다는 것이다.
+     - 부분 에 해당하는 것을 **filter** 라고 한다.
 
      <img src="./image/3.png" width="60%">
 
-     즉, image 전체를 보는 것이 아니라 부분을 보는 것이 핵심 아이디어이다.
+   - 1989년 LeCun이 발표한 논문 [*Backpropagation applied to handwritten zip code recognition*](http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf) 에서 처음 소개가 되었고, 우체국 주소의 필기체 zip code 를 인식하기 위해 개발 되었다.
 
-     이 부분 에 해당하는 것을 **filter** 라고 한다.
+     LeCun이 처음 소개한 CNN은 필기체 인식에 있어서는 매우 의미있는 결과가 나왔다. *Mnist*
+
+   - 이후, 2003년 Behnke의 논문 [*Hierarchical Neural Networks for Image Interpretation*](https://www.ais.uni-bonn.de/behnke/papers/diss_short.pdf) 을 통해 일반화가 되었다.
+
+   - Simard의 논문 [*Best Practices for Convolutional Neural Networks Applied to Visual Document Analysis*](http://cognitivemedium.com/assets/rmnist/Simard.pdf) 을 통해 단순화 되면서 개념 확대의 단초가 마련되었다. 
+
+3. ### 그럼, ***convolution*** 이란?
+
+
+
+   이 부분 에 해당하는 것을 **filter** 라고 한다.
 
    - 그럼, ***filter*** 란?
 
@@ -42,7 +50,12 @@
 
    - 위와 같이 계산해서 나온 output을 **convolution layer**라고 부른다. (k 가 정수가 아닌경우는 제외한다.
 
-3. ### 어떻게 convolution을 이미지에 적용할 수 있을까?
+4. ### 기존 Multi-layered Neural Network의 문제점
+
+   - multi-layered neural network를 이용하면 어떤 문제가 있는걸까?
+   - 
+
+5. ### 어떻게 convolution을 이미지에 적용할 수 있을까?
 
    - 컴퓨터는 그림을 여러개의 픽셀로 이루어진 행렬로 본다.
 
@@ -58,7 +71,7 @@
 
      이렇게 계속 줄여나가면 강인한 특징이 남게된다. 
 
-4. ### subsampling이란?
+6. ### subsampling이란?
 
    - 화면의 크기를 줄이는 과정이다.
 
@@ -70,7 +83,7 @@
 
      이렇게 하면 노이즈가 감소하고 속도도 빨라지고 영상의 분별력이 좋아진다고 한다.
 
-5. ### CNN으로
+7. ### CNN으로
 
    - 우리의 커널이 정확하게 고정된 값을 갖게하는 대신 convolution net을 학습 시켜 점점 더 주어진 이미지 필터링을 잘 하게 된다. 
 
