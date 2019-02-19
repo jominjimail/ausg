@@ -11,7 +11,6 @@
 발표자 : 조민지
 
 - 보안 관리, 과금 예방, 시작하기 전 꼭 알아야 할 개념
-
 - EC2를 이용한 Elastic Load Balancer 실습
 - EC2 instance에 CLI 모드로 S3 데이터 업로드 하기
 
@@ -21,4 +20,5 @@
 
 시간 : 12/06(목) 19:00 ~ 21:00
 
+(https://secure.meetup.com/ko-KR/register/?ctx=ref)
 <img src="./image/100.png" width="50%"> 
