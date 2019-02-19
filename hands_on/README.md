@@ -23,3 +23,5 @@
 (https://secure.meetup.com/ko-KR/register/?ctx=ref)
 
 <img src="./image/100.png" width="50%"> 
+
+<img src="./image/12.jpeg" width="50%"> <img src="./image/13.jpeg" width="50%"> 
