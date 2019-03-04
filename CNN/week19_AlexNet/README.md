@@ -43,4 +43,4 @@
 
 - ### AlexNet 결과
 
-  - <img src="./image/3.png" width="90%">
+  - <img src="./image/3.png" width="70%">
