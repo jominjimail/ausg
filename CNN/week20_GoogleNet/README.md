@@ -56,8 +56,11 @@
 
     
 
-  - ### GoogleNet 이 참고한 논문 2가지
+  - ### GoogleNet 이 참고한 논문 
 
     - [network in network](https://arxiv.org/pdf/1312.4400.pdf)
-    - 
+      - NIN 설계자는 convolution layer가 local receptive filed에서 featrue을 뽑아내는 능력은 우수하지만, filter의 특징이 linear하기 때문에 non-linear한 성질을 갖는 feature을 추출하는데 어려움이 있다고 지적했다.이를 극복하기 위해 feature map의 개수를 늘려야 하는데 이러면 연산량이 늘어난다는 문제점이 있다. 
+      - 이를 위해 micro neural network를 설계하였다.
+      - <img src="./image/7.png" width="80%">
+      - GoogleNet도 인셉션 모듈을 총 9개 사용했다.개념적으로 NIN과 맥이 닿는다. 
 
