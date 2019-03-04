@@ -8,9 +8,11 @@
 
   - 약 65만개의 뉴런, 6000만개의 free parameter, 6억 3000만개의 connection
 
+  - 학습하는데 일주일넘게 걸림
+
   - fully connected layer 3개
 
-  - 2개의 GPU (GTX580)를 사용 : 3GB 메모리 한계에 맞춰
+  - 2개의 GPU (GTX580)를 사용 : 3GB 메모리 한계에 맞춤
 
     - GPU-1 : 주로 컬러와 상관없는 정보를 추출하기 위한 kernel을 학습
     - GPU-2 : 주로 컬러와 관련된 정보를 추출하기 위한 kernel을 학습
