@@ -1,4 +1,5 @@
-# LeNet 5 
+# week22_LeNet5_implementation
+[소스 파일 위치: LeNet_5.py](https://github.com/jominjimail/python_proj/tree/master/LeNet_5) 
 
 소스 파일이 있는 directory에 *model* 이라는 directory를 만들어 줘야 함
 
