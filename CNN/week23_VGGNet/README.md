@@ -16,11 +16,12 @@
 - B : A 구조에 conv layer 추가 13 layer
 - C : B 구조에 1x1 conv layer 추가 16 layer
 - D : B 구조에 3x3 conv layer 추가 16 layer
-- E : 
+- E : D 구조에서 3x3 conv laeyr 추가 19 layer
 
-- <img src="./image/1.png" width="100%">
-  - conv < receptive field size >-< number of channels >
-  - The ReLU activation function is not shown for brevity
+<img src="./image/1.png" width="100%">
+
+- conv < receptive field size >-< number of channels >
+- The ReLU activation function is not shown for brevity
 
 ## VGG 특이한 점
 
@@ -50,14 +51,21 @@
 
 ## 더 자세히 보기 CONVNET CONFIGURATIONS
 
-- <img src="./image/2.png" width="60%">
+<img src="./image/2.png" width="40%">
+
 - 보통 conv layer 다음으로 해상도를 줄이기 위한 pooling layer가 오는데 여기서는 receptive field의 크기가 3x3인 filter을 여러개를 stack 하는 구조를 선택하였다. 
+
 - 2개를 쌓으면 5x5 convolution이 되고, 3개를 쌓으면 7x7 convolution이 된다.
+
 - 추가적으로, 파라미터의 수가 줄어들고, 이로 인해 학습 속도가 빨라진다. 
+
 - layer수가 많아질수록 non-linearity가 더 증가하기 때문에 좀 더 유용한 feature을 추출할 수 있다. 
+
 - 실제로, 5x5 1개로 구현하는 것보다 3x3 2개로 구현하는 편이 결과가 더 좋다.
+
 - 아래는 구조 발전 뱡향이다.
-- <img src="./image/3.png" width="90%">
+
+  <img src="./image/3.png" width="90%">
 
 
 
@@ -88,23 +96,33 @@
 ## VGG 결과 
 
 - SINGLE SCALE EVALUATION
+
   - 영상을 적용했을 때 결과는 아래 표과 같다. 망이 깊어질수록 결과가 좋아지고, 학습할 때 scale jittering을 사용한 경우에 결과가 더 좋다는것을 확인할 수 있다.
+
   - Q = S
-  - <img src="./image/4.png" width="100%">
+
+    <img src="./image/4.png" width="100%">
+
     - A : 기본 구조 11 layer
     - A-LRN : A에다 LRN 추가
     - B : A 구조에 conv layer 추가 13 layer
     - C : B 구조에 1x1 conv layer 추가 16 layer
     - D : B 구조에 3x3 conv layer 추가 16 layer
-    - E : 
+    - E : D 구조에서 3x3 conv laeyr 추가 19 layer
+
 - MULTI-SCALE EVALUATION
+
   - S가 고정된 경우 {S-32, S, S+32}로 Q값을 변화 시키면서 테스트 했다. 학습의 scale과 테스트의 scale의 차이가 많이 나는 경우 오히려 결과가 더 좋지 못해 32만큼 차이나게 했다고 한다.
+
   - 학습에 scale jittering을 적용한 경우는 출력의 크기는 [256, 384, 512]로 테스트 영상의 크기를 정했으며, 예상처럼 적용하지 않은 것보다 훨씬 결과가 좋고, single-scale 보다는 multi-scale의 결과가 더 좋았다.
-  - <img src="./image/5.png" width="100%">
+
+    <img src="./image/5.png" width="100%">
 
 - MULTI-CROP EVALUATION
+
   - multi-crop과 dense evaluation을 각각 적용했을 때는 grid 크기로 인해 multi-crop의 성능이 좋은편이며, 상보적인 특성을 갖고 있기에 같이 적용하면 성능이 개선되는 것을 아래 표로 알 수 있다.
-  - <img src="./image/6.png" width="100%">
+
+    <img src="./image/6.png" width="100%">
 
 ## 결론
 
