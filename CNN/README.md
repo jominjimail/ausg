@@ -16,10 +16,9 @@ CNN 모델
 4. GoogLeNet
 5. VGGNet
 6. ResNet
-7. AlphaGo 알고리즘
-8. Image Segmentation
-9. Image Detection방법론 : RCNN, SPPnet, FastRCNN, FasterRCNN
-10. Image Detection방법론 : AttentionNet, SSD, YOLO, YOLOv2
+7. Image Segmentation
+8. Image Detection방법론 : RCNN, SPPnet, FastRCNN, FasterRCNN
+9. Image Detection방법론 : AttentionNet, SSD, YOLO, YOLOv2
 
 
 
